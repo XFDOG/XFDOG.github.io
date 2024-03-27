@@ -6,15 +6,23 @@
   
   <title>博客搭建 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta property="og:type" content="article">
+  <meta name="description" content="前提PC装有node.js Npm使用国内镜像淘宝 设置淘宝镜像源     1npm config set registry https:&#x2F;&#x2F;registry.npm.taobao.org&#x2F;   设置官方镜像源 1npm config set registry https:&#x2F;&#x2F;registry.npmjs.org  查看镜像使用状态 1npm config get registry  如果返回">
+<meta property="og:type" content="article">
 <meta property="og:title" content="博客搭建">
 <meta property="og:url" content="http://example.com/2024/03/27/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="前提PC装有node.js Npm使用国内镜像淘宝 设置淘宝镜像源     1npm config set registry https:&#x2F;&#x2F;registry.npm.taobao.org&#x2F;   设置官方镜像源 1npm config set registry https:&#x2F;&#x2F;registry.npmjs.org  查看镜像使用状态 1npm config get registry  如果返回">
 <meta property="og:locale" content="en_US">
+<meta property="og:image" content="http://example.com/img/bkdj/1.png">
+<meta property="og:image" content="http://example.com/img/bkdj/2.png">
+<meta property="og:image" content="http://example.com/img/bkdj/3.png">
+<meta property="og:image" content="http://example.com/img/bkdj/4.png">
+<meta property="og:image" content="http://example.com/img/bkdj/5.png">
 <meta property="article:published_time" content="2024-03-27T11:48:23.000Z">
-<meta property="article:modified_time" content="2024-03-27T11:48:23.146Z">
+<meta property="article:modified_time" content="2024-03-27T13:26:56.565Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/img/bkdj/1.png">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -91,11 +99,78 @@
     
     <div class="e-content article-entry" itemprop="articleBody">
       
-        
+        <hr>
+<hr>
+<h2 id="前提"><a href="#前提" class="headerlink" title="前提"></a>前提</h2><p>PC装有node.js</p>
+<h2 id="Npm使用国内镜像淘宝"><a href="#Npm使用国内镜像淘宝" class="headerlink" title="Npm使用国内镜像淘宝"></a>Npm使用国内镜像淘宝</h2><ol>
+<li>设置淘宝镜像源</li>
+</ol>
+   <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm config <span class="built_in">set</span> registry https://registry.npm.taobao.org/</span><br></pre></td></tr></table></figure>
+
+<ol start="2">
+<li><p>设置官方镜像源</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm config <span class="built_in">set</span> registry https://registry.npmjs.org</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>查看镜像使用状态</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm config get registry</span><br></pre></td></tr></table></figure></li>
+</ol>
+<p>如果返回<code>https://registry.npm.taobao.org/</code>，说明配置的是淘宝镜像。</p>
+<p>如果返回<code>https://registry.npmjs.org/</code>，说明配置的是淘宝镜像。</p>
+<h2 id="解决npm证书失效，nmp安装报错"><a href="#解决npm证书失效，nmp安装报错" class="headerlink" title="解决npm证书失效，nmp安装报错"></a>解决npm证书失效，nmp安装报错</h2><ol>
+<li><p>清除npm缓存</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm cache clean --force</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>取消ssl认证、</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm config <span class="built_in">set</span> strict-ssl <span class="literal">false</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>重新安装</p>
+</li>
+</ol>
+<h2 id="安装Git，傻瓜式安装"><a href="#安装Git，傻瓜式安装" class="headerlink" title="安装Git，傻瓜式安装"></a>安装Git，傻瓜式安装</h2><p>网址</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https://registry.npmmirror.com/binary.html?path=git-for-windows/</span><br></pre></td></tr></table></figure>
+
+<h2 id="建站"><a href="#建站" class="headerlink" title="建站"></a>建站</h2><h3 id="1、初始化，创建一个项目"><a href="#1、初始化，创建一个项目" class="headerlink" title="1、初始化，创建一个项目"></a>1、初始化，创建一个项目</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo init &lt;项目名称&gt;</span><br></pre></td></tr></table></figure>
+
+<h3 id="2、运行项目，在该项目目录下"><a href="#2、运行项目，在该项目目录下" class="headerlink" title="2、运行项目，在该项目目录下"></a>2、运行项目，在该项目目录下</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Hexo server</span><br></pre></td></tr></table></figure>
+
+<p><img src="/../img/bkdj/1.png"></p>
+<h3 id="3、新建一片文章"><a href="#3、新建一片文章" class="headerlink" title="3、新建一片文章"></a>3、新建一片文章</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new &quot;My New Post”</span><br></pre></td></tr></table></figure>
+
+<h3 id="4、重新绑定端口"><a href="#4、重新绑定端口" class="headerlink" title="4、重新绑定端口"></a>4、重新绑定端口</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Hexo server  --ip ip地址 --port 端口</span><br></pre></td></tr></table></figure>
+
+<h3 id="5、清除hexo缓存"><a href="#5、清除hexo缓存" class="headerlink" title="5、清除hexo缓存"></a>5、清除hexo缓存</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Hexo clean</span><br></pre></td></tr></table></figure>
+
+<h3 id="6、生成静态文件（上传github用）"><a href="#6、生成静态文件（上传github用）" class="headerlink" title="6、生成静态文件（上传github用）"></a>6、生成静态文件（上传github用）</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Hexo g</span><br></pre></td></tr></table></figure>
+
+<p><img src="/../img/bkdj/2.png"></p>
+<h3 id="7、上传到github"><a href="#7、上传到github" class="headerlink" title="7、上传到github"></a>7、上传到github</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Hexo d</span><br></pre></td></tr></table></figure>
+
+<p><img src="/../img/bkdj/3.png"></p>
+<h2 id="将项目上传到github的前置"><a href="#将项目上传到github的前置" class="headerlink" title="将项目上传到github的前置"></a>将项目上传到github的前置</h2><h3 id="1、安装hexo-deployer-git插件"><a href="#1、安装hexo-deployer-git插件" class="headerlink" title="1、安装hexo-deployer-git插件"></a>1、安装hexo-deployer-git插件</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Npm  install hexo-deployer-git</span><br></pre></td></tr></table></figure>
+
+<p>运行成功会提示：INFO Delploy done:git</p>
+<h3 id="2、找到deploy-git下的config文件（在-git目录下，被隐藏了）并打开，加入以下内容"><a href="#2、找到deploy-git下的config文件（在-git目录下，被隐藏了）并打开，加入以下内容" class="headerlink" title="2、找到deploy_git下的config文件（在.git目录下，被隐藏了）并打开，加入以下内容"></a>2、找到deploy_git下的config文件（在.git目录下，被隐藏了）并打开，加入以下内容</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">[user]</span><br><span class="line">email = cj15020907347@163.com</span><br><span class="line">name = XFDOG</span><br></pre></td></tr></table></figure>
+
+<p><img src="/../img/bkdj/4.png"></p>
+<h3 id="3、找到-config-yml文件-添加如下内容"><a href="#3、找到-config-yml文件-添加如下内容" class="headerlink" title="3、找到_config.yml文件,添加如下内容"></a>3、找到_config.yml文件,添加如下内容</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: &#x27;git&#x27;</span><br><span class="line">  repo: https://github.com/XFDOG/XFDOG.github.io.git</span><br><span class="line">  branch: master</span><br><span class="line"></span><br><span class="line">repo：写的是github的仓库链接</span><br></pre></td></tr></table></figure>
+
+<p><img src="/../img/bkdj/5.png"></p>
+<h2 id="我们在本地写好一片笔记上传到github，执行三个步骤"><a href="#我们在本地写好一片笔记上传到github，执行三个步骤" class="headerlink" title="我们在本地写好一片笔记上传到github，执行三个步骤"></a>我们在本地写好一片笔记上传到github，执行三个步骤</h2><p>1、</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br></pre></td></tr></table></figure>
+
+<p>2、</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo g</span><br></pre></td></tr></table></figure>
+
+<p>3、</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo d</span><br></pre></td></tr></table></figure>
+
+
+
+<h1 id="上传成功后，github生成网站会很慢，内心等待"><a href="#上传成功后，github生成网站会很慢，内心等待" class="headerlink" title="上传成功后，github生成网站会很慢，内心等待"></a>上传成功后，github生成网站会很慢，内心等待</h1>
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2024/03/27/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/" data-id="clu9sghv90002w44zf1z8b71r" data-title="博客搭建" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      <a data-url="http://example.com/2024/03/27/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/" data-id="clu9uc1wu00044c4zgolda0tl" data-title="博客搭建" class="article-share-link"><span class="fa fa-share">Share</span></a>
       
       
       
