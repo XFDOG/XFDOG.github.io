@@ -2,102 +2,445 @@
 <html>
 <head>
   <meta charset="utf-8">
-  
-  
   <title>博客搭建 | Hexo</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="前提PC装有node.js Npm使用国内镜像淘宝 设置淘宝镜像源     1npm config set registry https:&#x2F;&#x2F;registry.npm.taobao.org&#x2F;   设置官方镜像源 1npm config set registry https:&#x2F;&#x2F;registry.npmjs.org  查看镜像使用状态 1npm config get registry  如果返回">
-<meta property="og:type" content="article">
-<meta property="og:title" content="博客搭建">
-<meta property="og:url" content="http://example.com/2024/03/27/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/index.html">
+  <meta name="keywords" content="">
+  <meta name="description" content="博客搭建 | Hexo">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta property="og:type" content="website">
+<meta property="og:title" content="代码">
+<meta property="og:url" content="http://example.com/%E4%BB%A3%E7%A0%81/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="前提PC装有node.js Npm使用国内镜像淘宝 设置淘宝镜像源     1npm config set registry https:&#x2F;&#x2F;registry.npm.taobao.org&#x2F;   设置官方镜像源 1npm config set registry https:&#x2F;&#x2F;registry.npmjs.org  查看镜像使用状态 1npm config get registry  如果返回">
-<meta property="og:locale" content="en_US">
-<meta property="og:image" content="http://example.com/img/bkdj/1.png">
-<meta property="og:image" content="http://example.com/img/bkdj/2.png">
-<meta property="og:image" content="http://example.com/img/bkdj/3.png">
-<meta property="og:image" content="http://example.com/img/bkdj/4.png">
-<meta property="og:image" content="http://example.com/img/bkdj/5.png">
-<meta property="article:published_time" content="2024-03-27T11:48:23.000Z">
-<meta property="article:modified_time" content="2024-03-27T13:26:56.565Z">
-<meta property="article:author" content="John Doe">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2024-03-28T07:26:32.000Z">
+<meta property="article:modified_time" content="2024-03-28T07:55:53.731Z">
+<meta property="article:author" content="花开人无在">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http://example.com/img/bkdj/1.png">
-  
-    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
-  
-  
-    <link rel="shortcut icon" href="/favicon.png">
-  
-  
-  
-<link rel="stylesheet" href="/css/style.css">
 
-  
-    
-<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
 
-  
-  
+<link rel="icon" href="/img/avatar.jpg">
+
+<link href="/css/style.css?v=1.1.0" rel="stylesheet">
+
+<link href="/css/hl_theme/atom-light.css?v=1.1.0" rel="stylesheet">
+
+<link href="//cdn.jsdelivr.net/npm/animate.css@4.1.0/animate.min.css" rel="stylesheet">
+
+<script src="//cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+<script src="/js/titleTip.js?v=1.1.0" ></script>
+
+<script src="//cdn.jsdelivr.net/npm/highlightjs@9.16.2/highlight.pack.min.js"></script>
+<script>
+    hljs.initHighlightingOnLoad();
+</script>
+
+<script src="//cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.js"></script>
+
+
+
+<script src="//cdn.jsdelivr.net/npm/jquery.cookie@1.4.1/jquery.cookie.min.js" ></script>
+
+<script src="/js/iconfont.js?v=1.1.0" ></script>
+
 <meta name="generator" content="Hexo 7.1.1"></head>
+<div style="display: none">
+  <input class="theme_disqus_on" value="false">
+  <input class="theme_preload_comment" value="">
+  <input class="theme_blog_path" value="">
+  <input id="theme_shortcut" value="true" />
+  <input id="theme_highlight_on" value="true" />
+  <input id="theme_code_copy" value="true" />
+</div>
+
+
 
 <body>
-  <div id="container">
-    <div id="wrap">
-      <header id="header">
-  <div id="banner"></div>
-  <div id="header-outer" class="outer">
-    <div id="header-title" class="inner">
-      <h1 id="logo-wrap">
-        <a href="/" id="logo">Hexo</a>
-      </h1>
-      
-    </div>
-    <div id="header-inner" class="inner">
-      <nav id="main-nav">
-        <a id="main-nav-toggle" class="nav-icon"><span class="fa fa-bars"></span></a>
-        
-          <a class="main-nav-link" href="/">Home</a>
-        
-          <a class="main-nav-link" href="/archives">Archives</a>
-        
-      </nav>
-      <nav id="sub-nav">
-        
-        
-          <a class="nav-icon" href="/atom.xml" title="RSS Feed"><span class="fa fa-rss"></span></a>
-        
-        <a class="nav-icon nav-search-btn" title="Search"><span class="fa fa-search"></span></a>
-      </nav>
-      <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://example.com"></form>
-      </div>
-    </div>
-  </div>
-</header>
-
-      <div class="outer">
-        <section id="main"><article id="post-博客搭建" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2024/03/27/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/" class="article-date">
-  <time class="dt-published" datetime="2024-03-27T11:48:23.000Z" itemprop="datePublished">2024-03-27</time>
+<aside class="nav">
+    <div class="nav-left">
+        <a href="/"
+   class="avatar_target">
+    <img class="avatar"
+         src="/img/avatar.jpg"/>
 </a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 class="p-name article-title" itemprop="headline name">
-      博客搭建
-    </h1>
-  
+<div class="author">
+    <span>花开人无在</span>
+</div>
 
-      </header>
+<div class="icon">
     
-    <div class="e-content article-entry" itemprop="articleBody">
+        
+            <a title="rss"
+               href="/atom.xml"
+               target="_blank">
+                
+                    <svg class="iconfont-svg" aria-hidden="true">
+                        <use xlink:href="#icon-rss"></use>
+                    </svg>
+                
+            </a>
+        
+    
+        
+            <a title="github"
+               href="https://github.com/yelog"
+               target="_blank">
+                
+                    <svg class="iconfont-svg" aria-hidden="true">
+                        <use xlink:href="#icon-github"></use>
+                    </svg>
+                
+            </a>
+        
+    
+        
+            <a title="facebook"
+               href="https://www.facebook.com/faker.tops"
+               target="_blank">
+                
+                    <svg class="iconfont-svg" aria-hidden="true">
+                        <use xlink:href="#icon-facebook"></use>
+                    </svg>
+                
+            </a>
+        
+    
+        
+    
+        
+    
+        
+            <a title="instagram"
+               href="https://www.facebook.com/faker.tops"
+               target="_blank">
+                
+                    <svg class="iconfont-svg" aria-hidden="true">
+                        <use xlink:href="#icon-instagram"></use>
+                    </svg>
+                
+            </a>
+        
+    
+        
+            <a title="reddit"
+               href="https://www.reddit.com/user/yelog/"
+               target="_blank">
+                
+                    <svg class="iconfont-svg" aria-hidden="true">
+                        <use xlink:href="#icon-reddit"></use>
+                    </svg>
+                
+            </a>
+        
+    
+        
+            <a title="weibo"
+               href="http://weibo.com/u/2307534817"
+               target="_blank">
+                
+                    <svg class="iconfont-svg" aria-hidden="true">
+                        <use xlink:href="#icon-weibo"></use>
+                    </svg>
+                
+            </a>
+        
+    
+        
+            <a title="jianshu"
+               href="https://www.jianshu.com/u/ff56736de7cf"
+               target="_blank">
+                
+                    <svg class="iconfont-svg" aria-hidden="true">
+                        <use xlink:href="#icon-jianshu"></use>
+                    </svg>
+                
+            </a>
+        
+    
+        
+            <a title="zhihu"
+               href="https://www.zhihu.com/people/jaytp/activities"
+               target="_blank">
+                
+                    <svg class="iconfont-svg" aria-hidden="true">
+                        <use xlink:href="#icon-zhihu"></use>
+                    </svg>
+                
+            </a>
+        
+    
+        
+    
+        
+            <a title="oschina"
+               href="https://my.oschina.net/yelog"
+               target="_blank">
+                
+                    <svg class="iconfont-svg" aria-hidden="true">
+                        <use xlink:href="#icon-oschina"></use>
+                    </svg>
+                
+            </a>
+        
+    
+        
+    
+        
+            <a title="email"
+               href="mailto:jaytp@qq.com"
+               target="_blank">
+                
+                    <svg class="iconfont-svg" aria-hidden="true">
+                        <use xlink:href="#icon-email"></use>
+                    </svg>
+                
+            </a>
+        
+    
+        
+            <a title="qq"
+               href="http://wpa.qq.com/msgrd?v=3&uin=872336115&site=qq&menu=yes"
+               target="_blank">
+                
+                    <svg class="iconfont-svg" aria-hidden="true">
+                        <use xlink:href="#icon-qq"></use>
+                    </svg>
+                
+            </a>
+        
+    
+        
+            <a title="kugou"
+               href="https://www.kugou.com/"
+               target="_blank">
+                
+                    <svg class="iconfont-svg" aria-hidden="true">
+                        <use xlink:href="#icon-kugou"></use>
+                    </svg>
+                
+            </a>
+        
+    
+        
+            <a title="neteasemusic"
+               href="https://music.163.com/#/user/home?id=88151013"
+               target="_blank">
+                
+                    <svg class="iconfont-svg" aria-hidden="true">
+                        <use xlink:href="#icon-neteasemusic"></use>
+                    </svg>
+                
+            </a>
+        
+    
+</div>
+
+
+
+
+
+<ul>
+    <li>
+        <div class="all active" data-rel="全部文章">全部文章
+            
+                <small>(5)</small>
+            
+        </div>
+    </li>
+    
+        
+            
+                
+    <li>
+        <div data-rel="代码">
+            
+            代码
+            <small>(3)</small>
+        </div>
+        
+    </li>
+
+            
+        
+    
+</ul>
+<div class="left-bottom">
+    <div class="menus">
+        
+            
+            
+            
+    </div>
+    <div>
+        
+        <a 
+                                           class="friends">友链</a>
+        
+    </div>
+</div>
+<input type="hidden" id="yelog_site_posts_number" value="5">
+
+<div style="display: none">
+    <span id="busuanzi_value_site_uv"></span>
+    <span id="busuanzi_value_site_pv"></span>
+</div>
+
+    </div>
+    <div class="nav-right">
+        <div class="friends-area">
+    <div class="friends-title">
+        友情链接
+        <i class="iconfont icon-left"></i>
+    </div>
+    <div class="friends-content">
+        <ul>
+            
+            <li><a target="_blank" href="http://yelog.org/">叶落阁</a></li>
+            
+        </ul>
+    </div>
+</div>
+        <div class="title-list">
+    <div class="right-top">
+        <div id="default-panel">
+            <i class="iconfont icon-search" data-title="搜索 快捷键 i"></i>
+            <div class="right-title">全部文章</div>
+            <i class="iconfont icon-file-tree" data-title="切换到大纲视图 快捷键 w"></i>
+        </div>
+        <div id="search-panel">
+            <i class="iconfont icon-left" data-title="返回"></i>
+            <input id="local-search-input" autocomplete="off"/>
+            <label class="border-line" for="input"></label>
+            <i class="iconfont icon-case-sensitive" data-title="大小写敏感"></i>
+            <i class="iconfont icon-tag" data-title="标签"></i>
+        </div>
+        <div id="outline-panel" style="display: none">
+            <div class="right-title">大纲</div>
+            <i class="iconfont icon-list" data-title="切换到文章列表"></i>
+        </div>
+    </div>
+
+    <div class="tags-list">
+    <input id="tag-search" />
+    <div class="tag-wrapper">
+        
+    </div>
+
+</div>
+
+    
+    <nav id="title-list-nav">
+        
+        
+        <a  class="全部文章 "
+           href="/2024/03/27/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="博客搭建">博客搭建</span>
+            <span class="post-date" title="2024-03-27 19:48:23">2024/03/27</span>
+        </a>
+        
+        
+        <a  class="全部文章 代码 "
+           href="/2024/03/27/JAVA/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="JAVA">JAVA</span>
+            <span class="post-date" title="2024-03-27 19:33:34">2024/03/27</span>
+        </a>
+        
+        
+        <a  class="全部文章 代码 "
+           href="/2024/03/27/Python/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="Python">Python</span>
+            <span class="post-date" title="2024-03-27 19:33:34">2024/03/27</span>
+        </a>
+        
+        
+        <a  class="全部文章 代码 "
+           href="/2024/03/27/php-0/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="PHP">PHP</span>
+            <span class="post-date" title="2024-03-27 19:33:34">2024/03/27</span>
+        </a>
+        
+        
+        <a  class="全部文章 "
+           href="/2024/03/27/hello-world/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="Hello World">Hello World</span>
+            <span class="post-date" title="2024-03-27 19:10:14">2024/03/27</span>
+        </a>
+        
+        <div id="no-item-tips">
+
+        </div>
+    </nav>
+    <div id="outline-list">
+    </div>
+</div>
+
+    </div>
+    <div class="hide-list">
+        <div class="semicircle" data-title="切换全屏 快捷键 s">
+            <div class="brackets first"><</div>
+            <div class="brackets">&gt;</div>
+        </div>
+    </div>
+</aside>
+<div id="post">
+    <div class="pjax">
+        <article id="post-博客搭建" class="article article-type-post" itemscope itemprop="blogPost">
+    
+        <h1 class="article-title">博客搭建</h1>
+    
+    <div class="article-meta">
+        
+        
+        
+        
+    </div>
+    <div class="article-meta">
+        
+            发布时间 : <time class="date" title='最后更新: 2024-03-27 21:32:35'>2024-03-27 19:48</time>
+        
+    </div>
+    <div class="article-meta">
+        
+        
+        <span id="busuanzi_container_page_pv">
+            阅读 :<span id="busuanzi_value_page_pv">
+                <span class="count-comment">
+                    <span class="spinner">
+                      <div class="cube1"></div>
+                      <div class="cube2"></div>
+                    </span>
+                </span>
+            </span>
+        </span>
+        
+        
+    </div>
+    
+    <div class="toc-ref">
+    
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%89%8D%E6%8F%90"><span class="toc-text">前提</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Npm%E4%BD%BF%E7%94%A8%E5%9B%BD%E5%86%85%E9%95%9C%E5%83%8F%E6%B7%98%E5%AE%9D"><span class="toc-text">Npm使用国内镜像淘宝</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%A7%A3%E5%86%B3npm%E8%AF%81%E4%B9%A6%E5%A4%B1%E6%95%88%EF%BC%8Cnmp%E5%AE%89%E8%A3%85%E6%8A%A5%E9%94%99"><span class="toc-text">解决npm证书失效，nmp安装报错</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AE%89%E8%A3%85Git%EF%BC%8C%E5%82%BB%E7%93%9C%E5%BC%8F%E5%AE%89%E8%A3%85"><span class="toc-text">安装Git，傻瓜式安装</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%BB%BA%E7%AB%99"><span class="toc-text">建站</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1%E3%80%81%E5%88%9D%E5%A7%8B%E5%8C%96%EF%BC%8C%E5%88%9B%E5%BB%BA%E4%B8%80%E4%B8%AA%E9%A1%B9%E7%9B%AE"><span class="toc-text">1、初始化，创建一个项目</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2%E3%80%81%E8%BF%90%E8%A1%8C%E9%A1%B9%E7%9B%AE%EF%BC%8C%E5%9C%A8%E8%AF%A5%E9%A1%B9%E7%9B%AE%E7%9B%AE%E5%BD%95%E4%B8%8B"><span class="toc-text">2、运行项目，在该项目目录下</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3%E3%80%81%E6%96%B0%E5%BB%BA%E4%B8%80%E7%89%87%E6%96%87%E7%AB%A0"><span class="toc-text">3、新建一片文章</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4%E3%80%81%E9%87%8D%E6%96%B0%E7%BB%91%E5%AE%9A%E7%AB%AF%E5%8F%A3"><span class="toc-text">4、重新绑定端口</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5%E3%80%81%E6%B8%85%E9%99%A4hexo%E7%BC%93%E5%AD%98"><span class="toc-text">5、清除hexo缓存</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#6%E3%80%81%E7%94%9F%E6%88%90%E9%9D%99%E6%80%81%E6%96%87%E4%BB%B6%EF%BC%88%E4%B8%8A%E4%BC%A0github%E7%94%A8%EF%BC%89"><span class="toc-text">6、生成静态文件（上传github用）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#7%E3%80%81%E4%B8%8A%E4%BC%A0%E5%88%B0github"><span class="toc-text">7、上传到github</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%B0%86%E9%A1%B9%E7%9B%AE%E4%B8%8A%E4%BC%A0%E5%88%B0github%E7%9A%84%E5%89%8D%E7%BD%AE"><span class="toc-text">将项目上传到github的前置</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1%E3%80%81%E5%AE%89%E8%A3%85hexo-deployer-git%E6%8F%92%E4%BB%B6"><span class="toc-text">1、安装hexo-deployer-git插件</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2%E3%80%81%E6%89%BE%E5%88%B0deploy-git%E4%B8%8B%E7%9A%84config%E6%96%87%E4%BB%B6%EF%BC%88%E5%9C%A8-git%E7%9B%AE%E5%BD%95%E4%B8%8B%EF%BC%8C%E8%A2%AB%E9%9A%90%E8%97%8F%E4%BA%86%EF%BC%89%E5%B9%B6%E6%89%93%E5%BC%80%EF%BC%8C%E5%8A%A0%E5%85%A5%E4%BB%A5%E4%B8%8B%E5%86%85%E5%AE%B9"><span class="toc-text">2、找到deploy_git下的config文件（在.git目录下，被隐藏了）并打开，加入以下内容</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3%E3%80%81%E6%89%BE%E5%88%B0-config-yml%E6%96%87%E4%BB%B6-%E6%B7%BB%E5%8A%A0%E5%A6%82%E4%B8%8B%E5%86%85%E5%AE%B9"><span class="toc-text">3、找到_config.yml文件,添加如下内容</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%88%91%E4%BB%AC%E5%9C%A8%E6%9C%AC%E5%9C%B0%E5%86%99%E5%A5%BD%E4%B8%80%E7%89%87%E7%AC%94%E8%AE%B0%E4%B8%8A%E4%BC%A0%E5%88%B0github%EF%BC%8C%E6%89%A7%E8%A1%8C%E4%B8%89%E4%B8%AA%E6%AD%A5%E9%AA%A4"><span class="toc-text">我们在本地写好一片笔记上传到github，执行三个步骤</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%B8%8A%E4%BC%A0%E6%88%90%E5%8A%9F%E5%90%8E%EF%BC%8Cgithub%E7%94%9F%E6%88%90%E7%BD%91%E7%AB%99%E4%BC%9A%E5%BE%88%E6%85%A2%EF%BC%8C%E5%86%85%E5%BF%83%E7%AD%89%E5%BE%85"><span class="toc-text">上传成功后，github生成网站会很慢，内心等待</span></a>
+    
+<style>
+    .left-col .switch-btn,
+    .left-col .switch-area {
+        display: none;
+    }
+    .toc-level-3 i,
+    .toc-level-3 ol {
+        display: none !important;
+    }
+</style>
+</div>
+    
+    <div class="article-entry" itemprop="articleBody">
       
         <hr>
 <hr>
@@ -105,187 +448,266 @@
 <h2 id="Npm使用国内镜像淘宝"><a href="#Npm使用国内镜像淘宝" class="headerlink" title="Npm使用国内镜像淘宝"></a>Npm使用国内镜像淘宝</h2><ol>
 <li>设置淘宝镜像源</li>
 </ol>
-   <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm config <span class="built_in">set</span> registry https://registry.npm.taobao.org/</span><br></pre></td></tr></table></figure>
-
+<pre><code class="bash">npm config set registry https://registry.npm.taobao.org/
+</code></pre>
 <ol start="2">
 <li><p>设置官方镜像源</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm config <span class="built_in">set</span> registry https://registry.npmjs.org</span><br></pre></td></tr></table></figure>
+<pre><code class="bash">npm config set registry https://registry.npmjs.org
+</code></pre>
 </li>
 <li><p>查看镜像使用状态</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm config get registry</span><br></pre></td></tr></table></figure></li>
+<pre><code class="bash">npm config get registry
+</code></pre>
+</li>
 </ol>
 <p>如果返回<code>https://registry.npm.taobao.org/</code>，说明配置的是淘宝镜像。</p>
 <p>如果返回<code>https://registry.npmjs.org/</code>，说明配置的是淘宝镜像。</p>
 <h2 id="解决npm证书失效，nmp安装报错"><a href="#解决npm证书失效，nmp安装报错" class="headerlink" title="解决npm证书失效，nmp安装报错"></a>解决npm证书失效，nmp安装报错</h2><ol>
 <li><p>清除npm缓存</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm cache clean --force</span><br></pre></td></tr></table></figure>
+<pre><code class="bash">npm cache clean --force
+</code></pre>
 </li>
 <li><p>取消ssl认证、</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm config <span class="built_in">set</span> strict-ssl <span class="literal">false</span></span><br></pre></td></tr></table></figure>
+<pre><code class="bash">npm config set strict-ssl false
+</code></pre>
 </li>
 <li><p>重新安装</p>
 </li>
 </ol>
 <h2 id="安装Git，傻瓜式安装"><a href="#安装Git，傻瓜式安装" class="headerlink" title="安装Git，傻瓜式安装"></a>安装Git，傻瓜式安装</h2><p>网址</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https://registry.npmmirror.com/binary.html?path=git-for-windows/</span><br></pre></td></tr></table></figure>
-
-<h2 id="建站"><a href="#建站" class="headerlink" title="建站"></a>建站</h2><h3 id="1、初始化，创建一个项目"><a href="#1、初始化，创建一个项目" class="headerlink" title="1、初始化，创建一个项目"></a>1、初始化，创建一个项目</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo init &lt;项目名称&gt;</span><br></pre></td></tr></table></figure>
-
-<h3 id="2、运行项目，在该项目目录下"><a href="#2、运行项目，在该项目目录下" class="headerlink" title="2、运行项目，在该项目目录下"></a>2、运行项目，在该项目目录下</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Hexo server</span><br></pre></td></tr></table></figure>
-
+<pre><code>https://registry.npmmirror.com/binary.html?path=git-for-windows/
+</code></pre>
+<h2 id="建站"><a href="#建站" class="headerlink" title="建站"></a>建站</h2><h3 id="1、初始化，创建一个项目"><a href="#1、初始化，创建一个项目" class="headerlink" title="1、初始化，创建一个项目"></a>1、初始化，创建一个项目</h3><pre><code>hexo init &lt;项目名称&gt;
+</code></pre>
+<h3 id="2、运行项目，在该项目目录下"><a href="#2、运行项目，在该项目目录下" class="headerlink" title="2、运行项目，在该项目目录下"></a>2、运行项目，在该项目目录下</h3><pre><code class="bash">Hexo server
+</code></pre>
 <p><img src="/../img/bkdj/1.png"></p>
-<h3 id="3、新建一片文章"><a href="#3、新建一片文章" class="headerlink" title="3、新建一片文章"></a>3、新建一片文章</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new &quot;My New Post”</span><br></pre></td></tr></table></figure>
-
-<h3 id="4、重新绑定端口"><a href="#4、重新绑定端口" class="headerlink" title="4、重新绑定端口"></a>4、重新绑定端口</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Hexo server  --ip ip地址 --port 端口</span><br></pre></td></tr></table></figure>
-
-<h3 id="5、清除hexo缓存"><a href="#5、清除hexo缓存" class="headerlink" title="5、清除hexo缓存"></a>5、清除hexo缓存</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Hexo clean</span><br></pre></td></tr></table></figure>
-
-<h3 id="6、生成静态文件（上传github用）"><a href="#6、生成静态文件（上传github用）" class="headerlink" title="6、生成静态文件（上传github用）"></a>6、生成静态文件（上传github用）</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Hexo g</span><br></pre></td></tr></table></figure>
-
+<h3 id="3、新建一片文章"><a href="#3、新建一片文章" class="headerlink" title="3、新建一片文章"></a>3、新建一片文章</h3><pre><code>hexo new &quot;My New Post”
+</code></pre>
+<h3 id="4、重新绑定端口"><a href="#4、重新绑定端口" class="headerlink" title="4、重新绑定端口"></a>4、重新绑定端口</h3><pre><code>Hexo server  --ip ip地址 --port 端口
+</code></pre>
+<h3 id="5、清除hexo缓存"><a href="#5、清除hexo缓存" class="headerlink" title="5、清除hexo缓存"></a>5、清除hexo缓存</h3><pre><code>Hexo clean
+</code></pre>
+<h3 id="6、生成静态文件（上传github用）"><a href="#6、生成静态文件（上传github用）" class="headerlink" title="6、生成静态文件（上传github用）"></a>6、生成静态文件（上传github用）</h3><pre><code>Hexo g
+</code></pre>
 <p><img src="/../img/bkdj/2.png"></p>
-<h3 id="7、上传到github"><a href="#7、上传到github" class="headerlink" title="7、上传到github"></a>7、上传到github</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Hexo d</span><br></pre></td></tr></table></figure>
-
+<h3 id="7、上传到github"><a href="#7、上传到github" class="headerlink" title="7、上传到github"></a>7、上传到github</h3><pre><code>Hexo d
+</code></pre>
 <p><img src="/../img/bkdj/3.png"></p>
-<h2 id="将项目上传到github的前置"><a href="#将项目上传到github的前置" class="headerlink" title="将项目上传到github的前置"></a>将项目上传到github的前置</h2><h3 id="1、安装hexo-deployer-git插件"><a href="#1、安装hexo-deployer-git插件" class="headerlink" title="1、安装hexo-deployer-git插件"></a>1、安装hexo-deployer-git插件</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Npm  install hexo-deployer-git</span><br></pre></td></tr></table></figure>
-
+<h2 id="将项目上传到github的前置"><a href="#将项目上传到github的前置" class="headerlink" title="将项目上传到github的前置"></a>将项目上传到github的前置</h2><h3 id="1、安装hexo-deployer-git插件"><a href="#1、安装hexo-deployer-git插件" class="headerlink" title="1、安装hexo-deployer-git插件"></a>1、安装hexo-deployer-git插件</h3><pre><code class="bash">Npm  install hexo-deployer-git
+</code></pre>
 <p>运行成功会提示：INFO Delploy done:git</p>
-<h3 id="2、找到deploy-git下的config文件（在-git目录下，被隐藏了）并打开，加入以下内容"><a href="#2、找到deploy-git下的config文件（在-git目录下，被隐藏了）并打开，加入以下内容" class="headerlink" title="2、找到deploy_git下的config文件（在.git目录下，被隐藏了）并打开，加入以下内容"></a>2、找到deploy_git下的config文件（在.git目录下，被隐藏了）并打开，加入以下内容</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">[user]</span><br><span class="line">email = cj15020907347@163.com</span><br><span class="line">name = XFDOG</span><br></pre></td></tr></table></figure>
-
+<h3 id="2、找到deploy-git下的config文件（在-git目录下，被隐藏了）并打开，加入以下内容"><a href="#2、找到deploy-git下的config文件（在-git目录下，被隐藏了）并打开，加入以下内容" class="headerlink" title="2、找到deploy_git下的config文件（在.git目录下，被隐藏了）并打开，加入以下内容"></a>2、找到deploy_git下的config文件（在.git目录下，被隐藏了）并打开，加入以下内容</h3><pre><code>[user]
+email = cj15020907347@163.com
+name = XFDOG
+</code></pre>
 <p><img src="/../img/bkdj/4.png"></p>
-<h3 id="3、找到-config-yml文件-添加如下内容"><a href="#3、找到-config-yml文件-添加如下内容" class="headerlink" title="3、找到_config.yml文件,添加如下内容"></a>3、找到_config.yml文件,添加如下内容</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: &#x27;git&#x27;</span><br><span class="line">  repo: https://github.com/XFDOG/XFDOG.github.io.git</span><br><span class="line">  branch: master</span><br><span class="line"></span><br><span class="line">repo：写的是github的仓库链接</span><br></pre></td></tr></table></figure>
+<h3 id="3、找到-config-yml文件-添加如下内容"><a href="#3、找到-config-yml文件-添加如下内容" class="headerlink" title="3、找到_config.yml文件,添加如下内容"></a>3、找到_config.yml文件,添加如下内容</h3><pre><code>deploy:
+  type: &#39;git&#39;
+  repo: https://github.com/XFDOG/XFDOG.github.io.git
+  branch: master
 
+repo：写的是github的仓库链接
+</code></pre>
 <p><img src="/../img/bkdj/5.png"></p>
 <h2 id="我们在本地写好一片笔记上传到github，执行三个步骤"><a href="#我们在本地写好一片笔记上传到github，执行三个步骤" class="headerlink" title="我们在本地写好一片笔记上传到github，执行三个步骤"></a>我们在本地写好一片笔记上传到github，执行三个步骤</h2><p>1、</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br></pre></td></tr></table></figure>
-
+<pre><code>hexo clean
+</code></pre>
 <p>2、</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo g</span><br></pre></td></tr></table></figure>
-
+<pre><code>hexo g
+</code></pre>
 <p>3、</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo d</span><br></pre></td></tr></table></figure>
-
-
-
+<pre><code>hexo d
+</code></pre>
 <h1 id="上传成功后，github生成网站会很慢，内心等待"><a href="#上传成功后，github生成网站会很慢，内心等待" class="headerlink" title="上传成功后，github生成网站会很慢，内心等待"></a>上传成功后，github生成网站会很慢，内心等待</h1>
       
+       <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以在下面评论区评论，也可以邮件至 jaytp@qq.com </span>
     </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2024/03/27/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/" data-id="clu9uc1wu00044c4zgolda0tl" data-title="博客搭建" class="article-share-link"><span class="fa fa-share">Share</span></a>
-      
-      
-      
-    </footer>
-  </div>
-  
-    
-<nav id="article-nav">
-  
-  
-    <a href="/2024/03/27/JAVA/" id="article-nav-older" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Older</strong>
-      <div class="article-nav-title">JAVA</div>
-    </a>
-  
-</nav>
-
-  
 </article>
 
 
-</section>
-        
-          <aside id="sidebar">
-  
-    
-
-  
-    
-
-  
-    
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Archives</h3>
-    <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2024/03/">March 2024</a></li></ul>
-    </div>
-  </div>
+<p>
+    <a  class="dashang" onclick="dashangToggle()">赏</a>
+</p>
 
 
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Recent Posts</h3>
-    <div class="widget">
-      <ul>
-        
-          <li>
-            <a href="/2024/03/27/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/">博客搭建</a>
-          </li>
-        
-          <li>
-            <a href="/2024/03/27/JAVA/">JAVA</a>
-          </li>
-        
-          <li>
-            <a href="/2024/03/27/Python/">Python</a>
-          </li>
-        
-          <li>
-            <a href="/2024/03/27/php-0/">PHP</a>
-          </li>
-        
-          <li>
-            <a href="/2024/03/27/hello-world/">Hello World</a>
-          </li>
-        
-      </ul>
-    </div>
-  </div>
 
-  
-</aside>
-        
-      </div>
-      <footer id="footer">
-  
-  <div class="outer">
-    <div id="footer-info" class="inner">
-      
-      &copy; 2024 John Doe<br>
-      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
-    </div>
-  </div>
-</footer>
+
+
+
+    
+
+
+
 
     </div>
-    <nav id="mobile-nav">
-  
-    <a href="/" class="mobile-nav-link">Home</a>
-  
-    <a href="/archives" class="mobile-nav-link">Archives</a>
-  
-</nav>
-    
+    <div class="copyright">
+        <p class="footer-entry">
+    ©2016-2020 Yelog
+</p>
+<p class="footer-entry">Built with <a href="https://hexo.io/" target="_blank">Hexo</a> and <a href="https://github.com/yelog/hexo-theme-3-hexo" target="_blank">3-hexo</a> theme</p>
+
+    </div>
+    <div class="full-toc">
+        <button class="full" data-title="切换全屏 快捷键 s"><span class="min "></span></button>
+<a class="" id="rocket" ></a>
+
+    </div>
+</div>
+
+<div class="hide_box" onclick="dashangToggle()"></div>
+<div class="shang_box">
+    <a class="shang_close"  onclick="dashangToggle()">×</a>
+    <div class="shang_tit">
+        <p>喜欢就点赞,疼爱就打赏</p>
+    </div>
+    <div class="shang_payimg">
+        <div class="pay_img">
+            <img src="/img/alipay.jpg" class="alipay" title="扫码支持">
+            <img src="/img/weixin.jpg" class="weixin" title="扫码支持">
+        </div>
+    </div>
+    <div class="shang_payselect">
+        <span><label><input type="radio" name="pay" checked value="alipay">支付宝</label></span><span><label><input type="radio" name="pay" value="weixin">微信</label></span>
+    </div>
+</div>
 
 
-<script src="/js/jquery-3.6.4.min.js"></script>
-
-
-
-  
-<script src="/fancybox/jquery.fancybox.min.js"></script>
-
-
-
-
-<script src="/js/script.js"></script>
-
-
-
-
-
-  </div>
 </body>
+<script src="/js/jquery.pjax.js?v=1.1.0" ></script>
+
+<script src="/js/script.js?v=1.1.0" ></script>
+<script>
+    var img_resize = 'default';
+    function initArticle() {
+        /*渲染对应的表格样式*/
+        
+            $("#post .pjax table").addClass("green_title");
+        
+
+        /*渲染打赏样式*/
+        
+        $("input[name=pay]").on("click", function () {
+            if($("input[name=pay]:checked").val()=="weixin"){
+                $(".shang_box .shang_payimg .pay_img").addClass("weixin_img");
+            } else {
+                $(".shang_box .shang_payimg .pay_img").removeClass("weixin_img");
+            }
+        })
+        
+
+        /*高亮代码块行号*/
+        
+
+        /*访问数量*/
+        
+        $.getScript("//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js");
+        
+
+        /*代码高亮，行号对齐*/
+        $('.pre-numbering').css('line-height',$('.has-numbering').css('line-height'));
+
+        
+        
+    }
+
+    /*打赏页面隐藏与展示*/
+    
+    function dashangToggle() {
+        $(".shang_box").fadeToggle();
+        $(".hide_box").fadeToggle();
+    }
+    
+
+</script>
+
+<!--加入行号的高亮代码块样式-->
+
+<!--自定义样式设置-->
+<style>
+    
+    
+    .nav {
+        width: 542px;
+    }
+    .nav.fullscreen {
+        margin-left: -542px;
+    }
+    .nav-left {
+        width: 120px;
+    }
+    
+    
+    @media screen and (max-width: 1468px) {
+        .nav {
+            width: 492px;
+        }
+        .nav.fullscreen {
+            margin-left: -492px;
+        }
+        .nav-left {
+            width: 100px;
+        }
+    }
+    
+    
+    @media screen and (max-width: 1024px) {
+        .nav {
+            width: 492px;
+            margin-left: -492px
+        }
+        .nav.fullscreen {
+            margin-left: 0;
+        }
+    }
+    
+    @media screen and (max-width: 426px) {
+        .nav {
+            width: 100%;
+        }
+        .nav-left {
+            width: 100%;
+        }
+    }
+    
+    
+    .nav-right .title-list nav a .post-title, .nav-right .title-list #local-search-result a .post-title {
+        color: #383636;
+    }
+    
+    
+    .nav-right .title-list nav a .post-date, .nav-right .title-list #local-search-result a .post-date {
+        color: #5e5e5f;
+    }
+    
+    
+    .nav-right nav a.hover, #local-search-result a.hover{
+        background-color: #e2e0e0;
+    }
+    
+    
+
+    /*列表样式*/
+    
+
+    /* 背景图样式 */
+    
+    
+
+
+    /*引用块样式*/
+    
+
+    /*文章列表背景图*/
+    
+
+    
+</style>
+
+
+
+
+
+
+
 </html>
