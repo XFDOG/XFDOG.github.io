@@ -1,0 +1,1320 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Linux | Hexo</title>
+  <meta name="keywords" content="">
+  <meta name="description" content="Linux | Hexo">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta property="og:type" content="website">
+<meta property="og:title" content="代码">
+<meta property="og:url" content="http://example.com/%E4%BB%A3%E7%A0%81/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2024-03-28T07:26:32.000Z">
+<meta property="article:modified_time" content="2024-03-28T07:55:53.731Z">
+<meta property="article:author" content="花开人无在">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="icon" href="/img/avatar.jpg">
+
+<link href="/css/style.css?v=1.1.0" rel="stylesheet">
+
+<link href="/css/hl_theme/atom-light.css?v=1.1.0" rel="stylesheet">
+
+<link href="//cdn.jsdelivr.net/npm/animate.css@4.1.0/animate.min.css" rel="stylesheet">
+
+<script src="//cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+<script src="/js/titleTip.js?v=1.1.0" ></script>
+
+<script src="//cdn.jsdelivr.net/npm/highlightjs@9.16.2/highlight.pack.min.js"></script>
+<script>
+    hljs.initHighlightingOnLoad();
+</script>
+
+<script src="//cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.js"></script>
+
+
+
+<script src="//cdn.jsdelivr.net/npm/jquery.cookie@1.4.1/jquery.cookie.min.js" ></script>
+
+<script src="/js/iconfont.js?v=1.1.0" ></script>
+
+<meta name="generator" content="Hexo 7.1.1"></head>
+<div style="display: none">
+  <input class="theme_disqus_on" value="false">
+  <input class="theme_preload_comment" value="">
+  <input class="theme_blog_path" value="">
+  <input id="theme_shortcut" value="true" />
+  <input id="theme_highlight_on" value="true" />
+  <input id="theme_code_copy" value="true" />
+</div>
+
+
+
+<body>
+<aside class="nav">
+    <div class="nav-left">
+        <a href="/"
+   class="avatar_target">
+    <img class="avatar"
+         src="/img/avatar.jpg"/>
+</a>
+<div class="author">
+    <span>花开人无在</span>
+</div>
+
+<div class="icon">
+    
+        
+            <a title="rss"
+               href="/atom.xml"
+               target="_blank">
+                
+                    <svg class="iconfont-svg" aria-hidden="true">
+                        <use xlink:href="#icon-rss"></use>
+                    </svg>
+                
+            </a>
+        
+    
+        
+            <a title="github"
+               href="https://github.com/yelog"
+               target="_blank">
+                
+                    <svg class="iconfont-svg" aria-hidden="true">
+                        <use xlink:href="#icon-github"></use>
+                    </svg>
+                
+            </a>
+        
+    
+        
+            <a title="facebook"
+               href="https://www.facebook.com/faker.tops"
+               target="_blank">
+                
+                    <svg class="iconfont-svg" aria-hidden="true">
+                        <use xlink:href="#icon-facebook"></use>
+                    </svg>
+                
+            </a>
+        
+    
+        
+    
+        
+    
+        
+            <a title="instagram"
+               href="https://www.facebook.com/faker.tops"
+               target="_blank">
+                
+                    <svg class="iconfont-svg" aria-hidden="true">
+                        <use xlink:href="#icon-instagram"></use>
+                    </svg>
+                
+            </a>
+        
+    
+        
+            <a title="reddit"
+               href="https://www.reddit.com/user/yelog/"
+               target="_blank">
+                
+                    <svg class="iconfont-svg" aria-hidden="true">
+                        <use xlink:href="#icon-reddit"></use>
+                    </svg>
+                
+            </a>
+        
+    
+        
+            <a title="weibo"
+               href="http://weibo.com/u/2307534817"
+               target="_blank">
+                
+                    <svg class="iconfont-svg" aria-hidden="true">
+                        <use xlink:href="#icon-weibo"></use>
+                    </svg>
+                
+            </a>
+        
+    
+        
+            <a title="jianshu"
+               href="https://www.jianshu.com/u/ff56736de7cf"
+               target="_blank">
+                
+                    <svg class="iconfont-svg" aria-hidden="true">
+                        <use xlink:href="#icon-jianshu"></use>
+                    </svg>
+                
+            </a>
+        
+    
+        
+            <a title="zhihu"
+               href="https://www.zhihu.com/people/jaytp/activities"
+               target="_blank">
+                
+                    <svg class="iconfont-svg" aria-hidden="true">
+                        <use xlink:href="#icon-zhihu"></use>
+                    </svg>
+                
+            </a>
+        
+    
+        
+    
+        
+            <a title="oschina"
+               href="https://my.oschina.net/yelog"
+               target="_blank">
+                
+                    <svg class="iconfont-svg" aria-hidden="true">
+                        <use xlink:href="#icon-oschina"></use>
+                    </svg>
+                
+            </a>
+        
+    
+        
+    
+        
+            <a title="email"
+               href="mailto:jaytp@qq.com"
+               target="_blank">
+                
+                    <svg class="iconfont-svg" aria-hidden="true">
+                        <use xlink:href="#icon-email"></use>
+                    </svg>
+                
+            </a>
+        
+    
+        
+            <a title="qq"
+               href="http://wpa.qq.com/msgrd?v=3&uin=872336115&site=qq&menu=yes"
+               target="_blank">
+                
+                    <svg class="iconfont-svg" aria-hidden="true">
+                        <use xlink:href="#icon-qq"></use>
+                    </svg>
+                
+            </a>
+        
+    
+        
+            <a title="kugou"
+               href="https://www.kugou.com/"
+               target="_blank">
+                
+                    <svg class="iconfont-svg" aria-hidden="true">
+                        <use xlink:href="#icon-kugou"></use>
+                    </svg>
+                
+            </a>
+        
+    
+        
+            <a title="neteasemusic"
+               href="https://music.163.com/#/user/home?id=88151013"
+               target="_blank">
+                
+                    <svg class="iconfont-svg" aria-hidden="true">
+                        <use xlink:href="#icon-neteasemusic"></use>
+                    </svg>
+                
+            </a>
+        
+    
+</div>
+
+
+
+
+
+<ul>
+    <li>
+        <div class="all active" data-rel="全部文章">全部文章
+            
+                <small>(6)</small>
+            
+        </div>
+    </li>
+    
+        
+            
+                
+    <li>
+        <div data-rel="代码">
+            
+            代码
+            <small>(3)</small>
+        </div>
+        
+    </li>
+
+            
+        
+    
+        
+            
+                
+    <li>
+        <div data-rel="操作系统">
+            
+            操作系统
+            <small>(1)</small>
+        </div>
+        
+    </li>
+
+            
+        
+    
+</ul>
+<div class="left-bottom">
+    <div class="menus">
+        
+            
+            
+            
+    </div>
+    <div>
+        
+        <a 
+                                           class="friends">友链</a>
+        
+    </div>
+</div>
+<input type="hidden" id="yelog_site_posts_number" value="6">
+<input type="hidden" id="yelog_site_word_count" value="59.9k">
+<div style="display: none">
+    <span id="busuanzi_value_site_uv"></span>
+    <span id="busuanzi_value_site_pv"></span>
+</div>
+
+    </div>
+    <div class="nav-right">
+        <div class="friends-area">
+    <div class="friends-title">
+        友情链接
+        <i class="iconfont icon-left"></i>
+    </div>
+    <div class="friends-content">
+        <ul>
+            
+            <li><a target="_blank" href="http://yelog.org/">叶落阁</a></li>
+            
+        </ul>
+    </div>
+</div>
+        <div class="title-list">
+    <div class="right-top">
+        <div id="default-panel">
+            <i class="iconfont icon-search" data-title="搜索 快捷键 i"></i>
+            <div class="right-title">全部文章</div>
+            <i class="iconfont icon-file-tree" data-title="切换到大纲视图 快捷键 w"></i>
+        </div>
+        <div id="search-panel">
+            <i class="iconfont icon-left" data-title="返回"></i>
+            <input id="local-search-input" autocomplete="off"/>
+            <label class="border-line" for="input"></label>
+            <i class="iconfont icon-case-sensitive" data-title="大小写敏感"></i>
+            <i class="iconfont icon-tag" data-title="标签"></i>
+        </div>
+        <div id="outline-panel" style="display: none">
+            <div class="right-title">大纲</div>
+            <i class="iconfont icon-list" data-title="切换到文章列表"></i>
+        </div>
+    </div>
+
+    <div class="tags-list">
+    <input id="tag-search" />
+    <div class="tag-wrapper">
+        
+    </div>
+
+</div>
+
+    
+    <nav id="title-list-nav">
+        
+        
+        <a  class="全部文章 操作系统 "
+           href="/2024/04/01/Linux/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="Linux">Linux</span>
+            <span class="post-date" title="2024-04-01 20:05:45">2024/04/01</span>
+        </a>
+        
+        
+        <a  class="全部文章 "
+           href="/2024/03/27/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="博客搭建">博客搭建</span>
+            <span class="post-date" title="2024-03-27 19:48:23">2024/03/27</span>
+        </a>
+        
+        
+        <a  class="全部文章 代码 "
+           href="/2024/03/27/JAVA/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="JAVA">JAVA</span>
+            <span class="post-date" title="2024-03-27 19:33:34">2024/03/27</span>
+        </a>
+        
+        
+        <a  class="全部文章 代码 "
+           href="/2024/03/27/Python/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="Python">Python</span>
+            <span class="post-date" title="2024-03-27 19:33:34">2024/03/27</span>
+        </a>
+        
+        
+        <a  class="全部文章 代码 "
+           href="/2024/03/27/php-0/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="PHP">PHP</span>
+            <span class="post-date" title="2024-03-27 19:33:34">2024/03/27</span>
+        </a>
+        
+        
+        <a  class="全部文章 "
+           href="/2024/03/27/hello-world/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="Hello World">Hello World</span>
+            <span class="post-date" title="2024-03-27 19:10:14">2024/03/27</span>
+        </a>
+        
+        <div id="no-item-tips">
+
+        </div>
+    </nav>
+    <div id="outline-list">
+    </div>
+</div>
+
+    </div>
+    <div class="hide-list">
+        <div class="semicircle" data-title="切换全屏 快捷键 s">
+            <div class="brackets first"><</div>
+            <div class="brackets">&gt;</div>
+        </div>
+    </div>
+</aside>
+<div id="post">
+    <div class="pjax">
+        <article id="post-Linux" class="article article-type-post" itemscope itemprop="blogPost">
+    
+        <h1 class="article-title">Linux</h1>
+    
+    <div class="article-meta">
+        
+        
+        
+        <span class="book">
+            <i class="iconfont icon-category"></i>
+            
+            
+            <a  data-rel="操作系统">操作系统</a>
+            
+        </span>
+        
+        
+    </div>
+    <div class="article-meta">
+        
+            发布时间 : <time class="date" title='最后更新: 2024-04-01 20:07:54'>2024-04-01 20:05</time>
+        
+    </div>
+    <div class="article-meta">
+        
+        <span>字数:4.6k</span>
+        
+        
+        <span id="busuanzi_container_page_pv">
+            阅读 :<span id="busuanzi_value_page_pv">
+                <span class="count-comment">
+                    <span class="spinner">
+                      <div class="cube1"></div>
+                      <div class="cube2"></div>
+                    </span>
+                </span>
+            </span>
+        </span>
+        
+        
+    </div>
+    
+    <div class="toc-ref">
+    
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#linux%E5%91%BD%E4%BB%A4%E7%9A%84%E5%9F%BA%E7%A1%80%E6%A0%BC%E5%BC%8F"><span class="toc-text">linux命令的基础格式</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#ls%E5%91%BD%E4%BB%A4"><span class="toc-text">ls命令</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#home%E7%9B%AE%E5%BD%95"><span class="toc-text">home目录</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#mkdir"><span class="toc-text">mkdir</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#touch"><span class="toc-text">touch</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#cat"><span class="toc-text">cat</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#more"><span class="toc-text">more</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#cp"><span class="toc-text">cp</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#mv"><span class="toc-text">mv</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#rm%E5%91%BD%E4%BB%A4"><span class="toc-text">rm命令</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#which"><span class="toc-text">which</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#find"><span class="toc-text">find</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#grep"><span class="toc-text">grep</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#wc"><span class="toc-text">wc</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AE%A1%E9%81%93%E7%AC%A6"><span class="toc-text">|管道符</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#echo"><span class="toc-text">echo</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8F%8D%E5%BC%95%E5%8F%B7"><span class="toc-text">反引号&#96;</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%87%8D%E5%AE%9A%E5%90%91%E7%AC%A6%E5%8F%B7"><span class="toc-text">重定向符号</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#tail"><span class="toc-text">tail</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#vi%E7%BC%96%E8%BE%91%E5%99%A8"><span class="toc-text">vi编辑器</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%91%BD%E4%BB%A4%E6%A8%A1%E5%BC%8F"><span class="toc-text">命令模式</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%BA%95%E7%BA%BF%E5%91%BD%E4%BB%A4%E6%A8%A1%E5%BC%8F"><span class="toc-text">底线命令模式</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%88%87%E6%8D%A2%E7%94%A8%E6%88%B7"><span class="toc-text">切换用户</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%BA%E6%99%AE%E9%80%9A%E7%94%A8%E6%88%B7%E6%B7%BB%E5%8A%A0sudo%E8%AE%A4%E8%AF%81"><span class="toc-text">为普通用户添加sudo认证</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%94%A8%E6%88%B7%E5%92%8C%E7%94%A8%E6%88%B7%E7%BB%84"><span class="toc-text">用户和用户组</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%88%9B%E5%BB%BA%E3%80%81%E5%88%A0%E9%99%A4%E7%94%A8%E6%88%B7%E7%BB%84"><span class="toc-text">创建、删除用户组</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%88%9B%E5%BB%BA%E3%80%81%E5%88%A0%E9%99%A4%E7%94%A8%E6%88%B7"><span class="toc-text">创建、删除用户</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9F%A5%E7%9C%8B%E7%94%A8%E6%88%B7%E5%90%8D"><span class="toc-text">查看用户名</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BF%AE%E6%94%B9%E7%94%A8%E6%88%B7%E6%89%80%E5%B1%9E%E7%94%A8%E6%88%B7%E7%BB%84"><span class="toc-text">修改用户所属用户组</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#getent"><span class="toc-text">getent</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%AE%A4%E7%9F%A5%E6%9D%83%E9%99%90%E4%BF%A1%E6%81%AF"><span class="toc-text">认知权限信息</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#chmod%E4%BF%AE%E6%94%B9%E6%9D%83%E9%99%90"><span class="toc-text">chmod修改权限</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9D%83%E9%99%90%E7%9A%84%E6%95%B0%E5%AD%97%E5%BA%8F%E5%8F%B7"><span class="toc-text">权限的数字序号</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#chown%E4%BF%AE%E6%94%B9%E6%96%87%E4%BB%B6%E3%80%81%E6%96%87%E4%BB%B6%E5%A4%B9%E7%9A%84%E6%89%80%E5%B1%9E%E7%94%A8%E6%88%B7%E6%88%96%E7%94%A8%E6%88%B7%E7%BB%84"><span class="toc-text">chown修改文件、文件夹的所属用户或用户组</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AE%9E%E7%94%A8%E5%B0%8F%E6%8A%80%E5%B7%A7"><span class="toc-text">实用小技巧</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#ctrl-c"><span class="toc-text">ctrl + c</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#ctrl-d"><span class="toc-text">ctrl + d</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8E%86%E5%8F%B2%E5%91%BD%E4%BB%A4%E6%90%9C%E7%B4%A2"><span class="toc-text">历史命令搜索</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%BF%AB%E9%80%9F%E7%A7%BB%E5%8A%A8%E5%85%89%E6%A0%87"><span class="toc-text">快速移动光标</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%B8%85%E5%B1%8F"><span class="toc-text">清屏</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%BD%AF%E4%BB%B6%E5%AE%89%E8%A3%85"><span class="toc-text">软件安装</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#centos"><span class="toc-text">centos</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#ubuntu"><span class="toc-text">ubuntu</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#systemctl%E5%91%BD%E4%BB%A4"><span class="toc-text">systemctl命令</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%BD%AF%E8%BF%9E%E6%8E%A5ln"><span class="toc-text">软连接ln</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#date%E5%91%BD%E4%BB%A4"><span class="toc-text">date命令</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BF%AE%E6%94%B9Linux%E6%97%B6%E5%8C%BA"><span class="toc-text">修改Linux时区</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#IP%E5%9C%B0%E5%9D%80"><span class="toc-text">IP地址</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%BB%E6%9C%BA%E5%90%8D"><span class="toc-text">主机名</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%BB%E6%9C%BA%E5%90%8D%E6%98%A0%E5%B0%84"><span class="toc-text">主机名映射</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#windows"><span class="toc-text">windows</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Linux"><span class="toc-text">Linux</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%AE%BE%E7%BD%AE%E9%9D%99%E6%80%81ip"><span class="toc-text">设置静态ip</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%BD%91%E7%BB%9C%E4%BC%A0%E8%BE%93"><span class="toc-text">网络传输</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#ping"><span class="toc-text">ping</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#wget"><span class="toc-text">wget</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#curl"><span class="toc-text">curl</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AB%AF%E5%8F%A3"><span class="toc-text">端口</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#nmap"><span class="toc-text">nmap</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#netstat"><span class="toc-text">netstat</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%BF%9B%E7%A8%8B"><span class="toc-text">进程</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%85%B3%E9%97%AD%E8%BF%9B%E7%A8%8Bkill"><span class="toc-text">关闭进程kill</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%BB%E6%9C%BA%E7%8A%B6%E6%80%81"><span class="toc-text">主机状态</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9F%A5%E7%9C%8B%E7%B3%BB%E7%BB%9F%E8%B5%84%E6%BA%90%E5%8D%A0%E7%94%A8top"><span class="toc-text">查看系统资源占用top</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%A3%81%E7%9B%98%E4%BF%A1%E6%81%AF%E7%9B%91%E6%8E%A7df-iostat"><span class="toc-text">磁盘信息监控df &#x2F;iostat</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%BD%91%E7%BB%9C%E7%8A%B6%E6%80%81%E7%9B%91%E6%8E%A7sar"><span class="toc-text">网络状态监控sar</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F"><span class="toc-text">环境变量</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%AC%A6%E5%8F%B7"><span class="toc-text">$符号</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%AE%BE%E7%BD%AE%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F"><span class="toc-text">设置环境变量</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%87%AA%E5%AE%9A%E4%B9%89%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8FPATH"><span class="toc-text">自定义环境变量PATH</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0%E5%92%8C%E4%B8%8B%E8%BD%BD"><span class="toc-text">文件上传和下载</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8E%8B%E7%BC%A9%E5%92%8C%E8%A7%A3%E5%8E%8B%E7%BC%A9"><span class="toc-text">压缩和解压缩</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#tar"><span class="toc-text">tar</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#zip"><span class="toc-text">zip</span></a></li></ol></li></ol></li></ol>
+    
+<style>
+    .left-col .switch-btn,
+    .left-col .switch-area {
+        display: none;
+    }
+    .toc-level-3 i,
+    .toc-level-3 ol {
+        display: none !important;
+    }
+</style>
+</div>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="linux命令的基础格式"><a href="#linux命令的基础格式" class="headerlink" title="linux命令的基础格式"></a>linux命令的基础格式</h1><pre><code>command [-options] [parameter]
+
+command:命令本身
+options:[可选，非必填]的一些选项，通过选项控制命令的行为细节 
+parameter:[可选,非必填]命令的参数，多数用于命令的指向目标等
+[]语法中表示可选的意思
+</code></pre>
+<h2 id="ls命令"><a href="#ls命令" class="headerlink" title="ls命令"></a>ls命令</h2><pre><code>ls [-a -l -h] [Linux路径]
+ls：直接使用ls，以平埔形式列出目录下内容
+-a：显示所有文件，包括 隐藏文件
+-l：以树状显示文件，包括文件的权限，所属用户和用户组，大小等
+-h：通常配合-l使用，以常规方式显示文件大小
+</code></pre>
+<h2 id="home目录"><a href="#home目录" class="headerlink" title="home目录"></a>home目录</h2><pre><code>当前登录用户的home目录作为当前工作目录
+每个linux操作用户在linux系统的个人账户目录，路径在/home/用户名、
+
+直接使用cd命令，回到当前登录用户的家目录下
+</code></pre>
+<h2 id="mkdir"><a href="#mkdir" class="headerlink" title="mkdir"></a>mkdir</h2><pre><code>创建目录
+选项：
+-p 可以创建多层目录
+</code></pre>
+<h2 id="touch"><a href="#touch" class="headerlink" title="touch"></a>touch</h2><pre><code>创建文件，没有选项
+</code></pre>
+<h2 id="cat"><a href="#cat" class="headerlink" title="cat"></a>cat</h2><pre><code>查看文件，全部显示出来
+</code></pre>
+<h2 id="more"><a href="#more" class="headerlink" title="more"></a>more</h2><pre><code>查看文件，可以翻页
+空格下一页，B向上翻页， q退出
+</code></pre>
+<h2 id="cp"><a href="#cp" class="headerlink" title="cp"></a>cp</h2><pre><code>复制文件，文件夹
+选项：
+-r 用于复制文件夹
+
+参数：
+被复制的文件  要复制去的地方
+</code></pre>
+<h2 id="mv"><a href="#mv" class="headerlink" title="mv"></a>mv</h2><pre><code>移动文件/文件夹 ，也可以用来修改文件名
+
+参数：
+被移动的文件/文件夹  要移动去的地方
+</code></pre>
+<h2 id="rm命令"><a href="#rm命令" class="headerlink" title="rm命令"></a>rm命令</h2><pre><code>rm  删除文件/文件夹
+
+选项:
+-r  删除目录
+-f  直接删除，不需要提醒
+
+
+参数：
+文件或文件夹路径，可以使用通配符来删除更多文件
+</code></pre>
+<h2 id="which"><a href="#which" class="headerlink" title="which"></a>which</h2><pre><code>使用时linux&#39;命令本质上都是执行二进制程序
+which用来查找命令的位置
+
+语法：
+which 命令
+</code></pre>
+<h2 id="find"><a href="#find" class="headerlink" title="find"></a>find</h2><pre><code>查找文件或者文件名,查找文件也可以使用通配符
+按照文件名搜索：
+find 起始路径 -name &quot;文件名&quot;
+
+
+按照文件大小搜索：
+find  起始路径 -size +|- -n[kMG]
+
++代表大于，-代表小于
+n代表大小数字
+KMG表示大小单位，k表示kB，M代表MB，G代表GB
+</code></pre>
+<h2 id="grep"><a href="#grep" class="headerlink" title="grep"></a>grep</h2><pre><code>从文件中通过关键字过滤文件行
+
+语法：
+grep [-n] 关键字 文件路径
+
+-n：表示再结果中显示匹配的行的行号
+关键字：建议用&quot;&quot;包围起来
+</code></pre>
+<h2 id="wc"><a href="#wc" class="headerlink" title="wc"></a>wc</h2><pre><code>统计文件的行数，单词，字节数量等
+
+语法：
+wc [-c -m -l -w] 文件路径
+
+-c：统计字节数量
+-m：统计字符数量
+-l：统计行数
+-w：统计单词数量
+</code></pre>
+<h2 id="管道符"><a href="#管道符" class="headerlink" title="|管道符"></a>|管道符</h2><pre><code>将左边的结果作为右边的输入
+</code></pre>
+<h2 id="echo"><a href="#echo" class="headerlink" title="echo"></a>echo</h2><pre><code>在命令行输出指定内容，最好用双引号包围
+-n:输出不换行
+</code></pre>
+<h2 id="反引号"><a href="#反引号" class="headerlink" title="反引号&#96;"></a>反引号&#96;</h2><pre><code>echo后面输出的是命令的话，可以用反引号包围，即可输出执行结果
+
+
+echo `ls /`
+</code></pre>
+<h2 id="重定向符号"><a href="#重定向符号" class="headerlink" title="重定向符号"></a>重定向符号</h2><pre><code>&gt; 将左边命令的结果覆盖到右侧文件
+&gt;&gt; 将左边命令的结果追加到右侧文件
+</code></pre>
+<h2 id="tail"><a href="#tail" class="headerlink" title="tail"></a>tail</h2><pre><code>查看文件尾部内容，跟踪文件的最新改动
+
+语法：
+tail [-f -num] 文件路径
+
+-f：表示持续跟踪
+-num：表示查看尾部多少行，不写默认10行
+</code></pre>
+<h2 id="vi编辑器"><a href="#vi编辑器" class="headerlink" title="vi编辑器"></a>vi编辑器</h2><h3 id="命令模式"><a href="#命令模式" class="headerlink" title="命令模式"></a>命令模式</h3><pre><code>i ：在当前光标位置进入输入模式
+esc：退回命令模式
+a：在当前光标位置之后进入输入模式
+I：在当前行的开头进入输入模式
+A：在当前行的结尾进入输入模式
+o：在当前光标下一行进入输入模式
+O：在当前光标上一行进入输入模式
+</code></pre>
+<pre><code>键盘上、键盘k：向上移动光标
+键盘下、键盘j：向下移动光标
+键盘左、键盘h：向左移动光标
+键盘右、键盘l：向右移动光标
+0：移动光标到当前行的开头
+$:移动到光标当前行的结尾
+PGUP：向上翻页
+PGDN：向下翻页
+/:进入搜索模式
+n：向下继续搜索
+N：向上继续搜索
+</code></pre>
+<pre><code>dd：删除光标所在行
+ndd：n是数字，删除当前光标向下n行
+yy：复制当前行
+nyy：n是数字，复制当前行和下面的n行
+p：粘贴复制的内容
+u：撤销修改
+ctrl+r：反向撤销修改
+gg：跳到首行
+G：跳到行尾
+dG：从当前开始，向下全部删除
+dgg：从当前开始，向上全部删除
+d$:从当前光标开始，删除到本行的结尾
+d0：从当前光标开始，删除到本行的开头
+</code></pre>
+<h3 id="底线命令模式"><a href="#底线命令模式" class="headerlink" title="底线命令模式"></a>底线命令模式</h3><pre><code>:wq		保存并退出
+:q		仅推出
+:q!		强制退出
+:w		仅保存
+:set nu		显示行号
+:set paste		设置粘贴模式
+</code></pre>
+<h2 id="切换用户"><a href="#切换用户" class="headerlink" title="切换用户"></a>切换用户</h2><pre><code>su - 用户名		不写用户名，默认切换root用户
+-：符号可选，表示是否在切换用户后加载环境变量，建议带上
+
+exit：切换用户后使用此命令退回上一个用户，或者使用快捷键ctrl + d
+</code></pre>
+<h3 id="为普通用户添加sudo认证"><a href="#为普通用户添加sudo认证" class="headerlink" title="为普通用户添加sudo认证"></a>为普通用户添加sudo认证</h3><pre><code>执行visudo或者vi /etc/sudoers
+在文件的最后添加 
+用户名 ALL=(ALL) NOPASSWD:ALL
+</code></pre>
+<h2 id="用户和用户组"><a href="#用户和用户组" class="headerlink" title="用户和用户组"></a>用户和用户组</h2><h3 id="创建、删除用户组"><a href="#创建、删除用户组" class="headerlink" title="创建、删除用户组"></a>创建、删除用户组</h3><pre><code>groupadd 组名：添加用户组
+
+在ubuntu中addgroup也可以添加
+
+
+groupdel：删除用户组
+</code></pre>
+<h3 id="创建、删除用户"><a href="#创建、删除用户" class="headerlink" title="创建、删除用户"></a>创建、删除用户</h3><pre><code>创建用户：
+useradd [-g -d] 用户名（在ubuntu中，使用adduser更好用，使用useradd没有提示设置密码，不会自动加入到home路径）
+-g：指定用户组，不指定会自动创建同名组并加入，指定-g需要组已经存在，如果已存在同名组，必须使用-g
+-d：指定用户的home路径，不指定，home目录默认在/home/用户名
+
+删除用户：
+userdel [-r]  用户名
+-r：删除用户的home目录，不使用-r，删除用户时，保留home目录
+</code></pre>
+<h3 id="查看用户名"><a href="#查看用户名" class="headerlink" title="查看用户名"></a>查看用户名</h3><pre><code>id[用户名]
+</code></pre>
+<h3 id="修改用户所属用户组"><a href="#修改用户所属用户组" class="headerlink" title="修改用户所属用户组"></a>修改用户所属用户组</h3><pre><code>usermod -aG 用户组 用户名
+
+</code></pre>
+<h3 id="getent"><a href="#getent" class="headerlink" title="getent"></a>getent</h3><pre><code>getent passwd：查看当前系统中有哪些用户
+
+getent group：查看当前系统中有哪些组
+</code></pre>
+<h2 id="认知权限信息"><a href="#认知权限信息" class="headerlink" title="认知权限信息"></a>认知权限信息</h2><pre><code>
+    权限       用户 用户组
+drwxr-xr-x  29 root root  1020 Sep 23 09:31 run
+lrwxrwxrwx   1 root root     8 Apr 21  2022 sbin -&gt; usr/sbin
+drwxr-xr-x   6 root root  4096 Apr 21  2022 snap
+drwxr-xr-x   2 root root  4096 Apr 21  2022 srv
+dr-xr-xr-x  13 root root     0 Sep 13 12:13 sys
+drwxrwxrwt  12 root root  4096 Sep 23 07:58 tmp
+drwxr-xr-x  14 root root  4096 Apr 21  2022 usr
+drwxr-xr-x  13 root root  4096 Apr 21  2022 var
+
+
+-：表示文件
+d：表示目录
+l：表示软连接
+
+
+每三个rwx为一组，分别表示所属用户的权限，用户组的权限，其他用户的权限
+</code></pre>
+<pre><code>r：针对文件可以查看文件内容；针对文件夹可以查看文件夹内容，如ls命令
+w：针对文件表示可以修改文件内容；针对文件夹可以在文件夹内，创建、修改、改名等操作
+x：针对文件表示可以将文件作为执行程序；针对文件夹表示可以更改工作目录 到此文件夹，即cd进入
+</code></pre>
+<h2 id="chmod修改权限"><a href="#chmod修改权限" class="headerlink" title="chmod修改权限"></a>chmod修改权限</h2><pre><code>chmod 注意：只有文件、文件夹的所属用户或root用户才可以修改
+
+语法：
+chmod [-R] 权限 文件或文件夹
+-R：对文件夹内的全部内容生效
+
+例：
+chmod u=rwx g=rw o=r hello.txt //将文件权限修改为rwxrw-r--
+</code></pre>
+<h3 id="权限的数字序号"><a href="#权限的数字序号" class="headerlink" title="权限的数字序号"></a>权限的数字序号</h3><pre><code>r：数字表示为4
+w：数字表示为2
+x：数字表示为1
+0表示没有任何权限
+
+所以rwx满权限为7
+</code></pre>
+<h2 id="chown修改文件、文件夹的所属用户或用户组"><a href="#chown修改文件、文件夹的所属用户或用户组" class="headerlink" title="chown修改文件、文件夹的所属用户或用户组"></a>chown修改文件、文件夹的所属用户或用户组</h2><pre><code>此命令只适合root用户
+
+语法：
+chown [-R] [用户] [:] [用户组] 文件或文件夹
+
+-R：同chmod
+用户：修改所属用户
+: ：用于分隔用户和用户组
+用户组：修改所属用户组
+</code></pre>
+<h2 id="实用小技巧"><a href="#实用小技巧" class="headerlink" title="实用小技巧"></a>实用小技巧</h2><h3 id="ctrl-c"><a href="#ctrl-c" class="headerlink" title="ctrl + c"></a>ctrl + c</h3><pre><code>可以强制停止某些程序的运行；或者终止本次命令，重新开始
+</code></pre>
+<h3 id="ctrl-d"><a href="#ctrl-d" class="headerlink" title="ctrl + d"></a>ctrl + d</h3><pre><code>退出当前用户，切换到上一个用户；或者退出python等专属页面，vi/vim不可以
+</code></pre>
+<h3 id="历史命令搜索"><a href="#历史命令搜索" class="headerlink" title="历史命令搜索"></a>历史命令搜索</h3><p>!命令前缀 </p>
+<pre><code>!命令前缀  //自动执行上一次匹配到的前缀的命令
+</code></pre>
+<p>ctrl + r</p>
+<pre><code>输入命令部分内容，在历史中匹配
+
+回车键直接执行；
+键盘左右键，修改命令，选择执行
+</code></pre>
+<h3 id="快速移动光标"><a href="#快速移动光标" class="headerlink" title="快速移动光标"></a>快速移动光标</h3><pre><code>ctrl + a：跳到命令开头
+ctrl + e：跳到命令结尾
+
+ctrl + 键盘左键：向左跳一个单词
+ctrl + 键盘右键：向右跳一个单词
+</code></pre>
+<h3 id="清屏"><a href="#清屏" class="headerlink" title="清屏"></a>清屏</h3><pre><code>清楚终端效果
+
+ctrl + l  或者 clear命令
+</code></pre>
+<h2 id="软件安装"><a href="#软件安装" class="headerlink" title="软件安装"></a>软件安装</h2><h3 id="centos"><a href="#centos" class="headerlink" title="centos"></a>centos</h3><pre><code>yum：RPM包软件管理器，用于自动化安装配置linux软件，并且可以自动解决依赖问题
+语法：
+yum [-y] [install | remove | search] 软件名称
+
+install：安装
+remove：卸载
+search：搜索
+</code></pre>
+<h3 id="ubuntu"><a href="#ubuntu" class="headerlink" title="ubuntu"></a>ubuntu</h3><pre><code>
+语法：
+apt [-y] [install | remove | search] 软件名称
+
+install：安装
+remove：卸载
+search：搜索
+</code></pre>
+<h2 id="systemctl命令"><a href="#systemctl命令" class="headerlink" title="systemctl命令"></a>systemctl命令</h2><pre><code>语法：
+systemctl start | stop |status | enable | disable  服务名
+
+start：启动
+stop：关闭
+status：查看状态
+enable：开机自启
+disable：关闭开机自启
+</code></pre>
+<pre><code>NetworkManager：主网络服务
+network：副网络服务
+firewalld：防火墙服务
+ssh，sshd服务：远程登陆
+</code></pre>
+<h2 id="软连接ln"><a href="#软连接ln" class="headerlink" title="软连接ln"></a>软连接ln</h2><pre><code>类似于windows中的快捷方式，将文件或文件夹链接到其他地方
+
+语法：
+ln -s 参数1 参数2    
+
+-s：创建软连接
+参数1：被链接的文件或文件夹 ，必须使用绝对路径
+参数2：要链接去的地方
+</code></pre>
+<h2 id="date命令"><a href="#date命令" class="headerlink" title="date命令"></a>date命令</h2><pre><code>语法：
+date [-d] [+格式化字符串]  连这写时，用&quot;&quot;包起来
+-d：按照给定的字符串方式显示日期，一般用于日期计算；date -d &quot;+1 year&quot;  +%Y
+-d支持的时间标记：  可以和格式化字符串配合使用
+    year：年
+    month：月
+    day：天
+    hour：小时
+    minute：分钟
+    second：秒
+格式化字符串：
+    %Y：年
+    %y：年份后两位数字
+    %m：月份
+    %d：日
+    %H：小时
+    %M：分钟
+    %S：秒
+    %s：时间戳
+    
+</code></pre>
+<h3 id="修改Linux时区"><a href="#修改Linux时区" class="headerlink" title="修改Linux时区"></a>修改Linux时区</h3><pre><code>修改时区为东八区
+
+rm -rf /etc/localtime
+sudo ln -s /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
+
+将系统自带的localtime文件删除，并将/usr/share/zoneinfo/Asia/Shanghai文件连接为localtime文件即可
+
+安装ntp服务，自动校准时间
+手动校准命令 ntp -u ntp.aliyun.com 手动校准时间
+</code></pre>
+<h2 id="IP地址"><a href="#IP地址" class="headerlink" title="IP地址"></a>IP地址</h2><pre><code>使用ifconfig查看，无法使用安装net-tools
+</code></pre>
+<h2 id="主机名"><a href="#主机名" class="headerlink" title="主机名"></a>主机名</h2><pre><code>hostname：查看主机名
+
+修改主机名语法：
+hostnamectl set-hostname 主机名
+</code></pre>
+<h2 id="主机名映射"><a href="#主机名映射" class="headerlink" title="主机名映射"></a>主机名映射</h2><h3 id="windows"><a href="#windows" class="headerlink" title="windows"></a>windows</h3><pre><code>地址：C:\Windows\System32\drivers\etc\hosts
+</code></pre>
+<h3 id="Linux"><a href="#Linux" class="headerlink" title="Linux"></a>Linux</h3><pre><code>地址：/etc/hosts
+</code></pre>
+<h2 id="设置静态ip"><a href="#设置静态ip" class="headerlink" title="设置静态ip"></a>设置静态ip</h2><pre><code>vi /etc/sysconfig/network-scripts/ifcfg-ens33
+
+BOOTPROTO=static
+ONBOOT=yes
+
+IPADDR=
+NETMASK=     #子网掩码
+GATEWAY=	#网关
+DNS=
+
+vi /etc/resolv.conf    #设置dns
+    nameserver 8.8.8.8
+    nameserver 114.114.114.114
+
+systemctl  restart network
+</code></pre>
+<h2 id="网络传输"><a href="#网络传输" class="headerlink" title="网络传输"></a>网络传输</h2><h3 id="ping"><a href="#ping" class="headerlink" title="ping"></a>ping</h3><p>检查网络是否联通</p>
+<pre><code>语法：
+ping [-c num] ip/域名
+
+-c：检查的次数，默认无限制检查
+</code></pre>
+<h3 id="wget"><a href="#wget" class="headerlink" title="wget"></a>wget</h3><p>非交互式的文件下载器，可以在命令行内下载网络文件</p>
+<pre><code>语法：
+wget [-b] url
+-b：后台下载，会将日志写入到当前工作目录的wget-log文件；使用tail -f wget-log 可以持续跟踪下载进度
+</code></pre>
+<h3 id="curl"><a href="#curl" class="headerlink" title="curl"></a>curl</h3><p>请求网站，也可以下载文件</p>
+<pre><code>curl -O 文件地址
+</code></pre>
+<h2 id="端口"><a href="#端口" class="headerlink" title="端口"></a>端口</h2><pre><code>1~1023：工人端口，系统内置，知名软件绑定使用
+1024~49151：注册端口，用户自定义
+49152~65535：临时端口
+</code></pre>
+<h3 id="nmap"><a href="#nmap" class="headerlink" title="nmap"></a>nmap</h3><pre><code>安装nmap： yum -y install nmap
+语法：
+nmap ip地址
+</code></pre>
+<h3 id="netstat"><a href="#netstat" class="headerlink" title="netstat"></a>netstat</h3><pre><code>netstat -nltp  查看本机端口开放情况
+</code></pre>
+<h2 id="进程"><a href="#进程" class="headerlink" title="进程"></a>进程</h2><pre><code>语法：
+ps [-e -f] 
+-e：显示出全部进程
+-f：已完全格式化的形式展现信息
+一般来说ef一起用
+</code></pre>
+<pre><code>UID：进程所属用户id
+PID：进程的进程ID
+PPID：进程的父ID
+C：此进程的CPU占用利率
+STIME：进程的启动时间
+TTY：启动此进程的终端序号，显示？，表示非终端启动
+TIME：进程占用CPU的时间
+CMD；进程的路径或者启动命令
+</code></pre>
+<h3 id="关闭进程kill"><a href="#关闭进程kill" class="headerlink" title="关闭进程kill"></a>关闭进程kill</h3><pre><code>语法：
+kill [-9] 进程id
+-9：强制关闭进程。不使用此选选项会向进程发送信号要求其关闭，但是否关闭要看进程本身的处理机制
+</code></pre>
+<h2 id="主机状态"><a href="#主机状态" class="headerlink" title="主机状态"></a>主机状态</h2><h3 id="查看系统资源占用top"><a href="#查看系统资源占用top" class="headerlink" title="查看系统资源占用top"></a>查看系统资源占用top</h3><p>top的交互式命令，区分大小写</p>
+<pre><code>h键：显示帮助画面
+c键：显示产生进程的完整命令，等同于-c
+f键：选择需要展示的项目，空格选中
+M键：根据驻留内存大小RES排序
+P键：根据cpu使用百分比大小进行排序
+T键：根据时间/累计时间进行排序
+E键：切换顶部内存显示单位
+e键：切换进程内存显示单位
+l键：切换显示平均负载和启动时间信息
+i键：不显示闲置或无用的进程，等同于-i
+t键：切换cpu状态信息
+m键：切换显示内存的信息
+</code></pre>
+<pre><code>使用直接输入top命令	，默认5秒刷新一次，按q或ctrl+c退出
+
+选项：
+-p：只显示某个进程的信息
+-d：设置刷新时间，默认是5s
+-c：显示产生进程的完整命令，默认是进程名
+-n：指定刷新次数，比如top -n 3，刷新输出3次后推出
+-b：以批次的方式执行top，一般配合-n指定输出几次统计信息，将输出重定向指定文件，比如 top -b -n 3 &gt; /tmp/top.tmp
+-i:不显任何闲置或无用的进程
+-u：查特定用户启动的进程
+</code></pre>
+<pre><code>top - 10:59:33 up 20 days, 22:45,  1 user,  load average: 0.00, 0.00, 0.00
+Tasks: 124 total,   1 running, 123 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  0.3 us,  0.1 sy,  0.0 ni, 99.6 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st
+MiB Mem :   3399.5 total,    760.9 free,    304.7 used,   2333.9 buff/cache
+MiB Swap:      0.0 total,      0.0 free,      0.0 used.   2834.7 avail Mem 
+</code></pre>
+<p>第一行</p>
+<table>
+<thead>
+<tr>
+<th align="left">top</th>
+<th>10:59:33</th>
+<th>up 20 days, 22:45,</th>
+<th>1 user</th>
+<th>load average: 0.00, 0.00, 0.00</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">命令名称</td>
+<td>当前系统时间</td>
+<td>启动了20天，22个小时</td>
+<td>1个用户登录</td>
+<td>load：1、5、15分钟的负载</td>
+</tr>
+</tbody></table>
+<p>第二行</p>
+<table>
+<thead>
+<tr>
+<th>Tasks: 124 total</th>
+<th>1 running</th>
+<th>123 sleeping</th>
+<th>0 stopped</th>
+<th>0 zombie</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>124个进程</td>
+<td>一个子进程正在运行</td>
+<td>123个进程睡眠</td>
+<td>0个停止进程</td>
+<td>0个僵尸进程</td>
+</tr>
+</tbody></table>
+<p>第三行</p>
+<table>
+<thead>
+<tr>
+<th>%Cpu(s)</th>
+<th>us</th>
+<th>sy</th>
+<th>ni</th>
+<th>id</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>cpu使用率</td>
+<td>用户cpu使用率</td>
+<td>系统cpu使用率</td>
+<td>高优先级进程占用cpu时间百分比</td>
+<td>空闲cpu率</td>
+</tr>
+</tbody></table>
+<table>
+<thead>
+<tr>
+<th>wa</th>
+<th>hi</th>
+<th>si</th>
+<th>st</th>
+<th></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>IO等cpu占用率</td>
+<td>cpu硬件中断率</td>
+<td>cpu软件终端率</td>
+<td>强制等待占用cpu率</td>
+<td></td>
+</tr>
+</tbody></table>
+<p>第四、五行</p>
+<table>
+<thead>
+<tr>
+<th>MiB Mem</th>
+<th>total</th>
+<th>free</th>
+<th>used</th>
+<th>buff&#x2F;cache</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>物理内存</td>
+<td>总量</td>
+<td>空闲</td>
+<td>使用</td>
+<td>buff和cache占用</td>
+</tr>
+</tbody></table>
+<table>
+<thead>
+<tr>
+<th>MiB Swap</th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>虚拟内存（交换空间）</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
+<pre><code>  
+   PID USER      PR  NI    VIRT    RES    SHR S  %CPU %MEM     TIME+ COMMAND                                                                                                     
+     1 root      20   0  193688   6820   4180 S   0.0  0.4   0:01.42 systemd                                                                                                     
+     2 root      20   0       0      0      0 S   0.0  0.0   0:00.01 kthreadd                                                                                                    
+     4 root       0 -20       0      0      0 S   0.0  0.0   0:00.00 kworker/0:0H                                                                                                
+     6 root      20   0       0      0      0 S   0.0  0.0   0:00.03 ksoftirqd/0  
+</code></pre>
+<pre><code>PID：进程id
+USER：进程所属用户
+PR：进程优先级，越小越高
+NI：负值表示高优先级，正值表示低优先级
+VIRT：进程使用虚拟内存，单位kb
+RES：进程使用物理内存，单位kb
+SHR：进程使用共享内存，单位kb
+S：进程状态（S休眠；R运行；Z僵死：N负数优先级；I空闲）
+%CPU：进程占用CPU率
+%MEM：进程占用内存率
+TIME+：进程使用CPU时间总计，单位10毫秒
+COMMAND：进程的命令或名称或程序文件路径
+</code></pre>
+<h3 id="磁盘信息监控df-iostat"><a href="#磁盘信息监控df-iostat" class="headerlink" title="磁盘信息监控df &#x2F;iostat"></a>磁盘信息监控df &#x2F;iostat</h3><pre><code>语法：
+df [-h]
+-h：人性化显示
+</code></pre>
+<p>cpu与磁盘的详细信息</p>
+<pre><code>需要安装sysstat
+语法：
+iostat [-x]  数字1 数字2
+-x：显示更多信息
+数字1：几秒刷新一次
+数字2：刷新几次推出
+rKB/s：每秒发送到设备的读取请求数
+wKB/s：每秒发送到设备的写入请求数
+%util：磁盘利用率
+</code></pre>
+<h3 id="网络状态监控sar"><a href="#网络状态监控sar" class="headerlink" title="网络状态监控sar"></a>网络状态监控sar</h3><p>此命令比较复杂，这里使用一个固定语法</p>
+<pre><code>sar -n DEV num1 num2
+-n：查看网络，DEV表示查看网络接口
+num1：刷新间隔
+num2：刷新几次
+</code></pre>
+<pre><code>rxkb/s：每秒接受的数据包大小，单位kb
+txkb/s：每秒发送的数据包大小，单位kb
+</code></pre>
+<h2 id="环境变量"><a href="#环境变量" class="headerlink" title="环境变量"></a>环境变量</h2><pre><code>执行env命令可以查看当前系统中记录的环境变量
+
+path记载环境变量，以:分割
+</code></pre>
+<h3 id="符号"><a href="#符号" class="headerlink" title="$符号"></a>$符号</h3><p>被用于取“变量”的值</p>
+<pre><code>echo $PATH 用于输出PATH的值
+当PATH和其他变量混合的时候，通过&#123;&#125;来标注变量是谁 echo $&#123;PATH&#125;ABCD
+</code></pre>
+<h3 id="设置环境变量"><a href="#设置环境变量" class="headerlink" title="设置环境变量"></a>设置环境变量</h3><p>临时设置：</p>
+<pre><code>    语法：
+        export 变量名=变量值	
+        
+    echo $变量名
+</code></pre>
+<p>永久设置：</p>
+<ul>
+<li><p>针对当前用户生效，配置在当前用户：~&#x2F;.bashrc文件中</p>
+</li>
+<li><p>针对所有用户生效，配置在系统中：&#x2F;etc&#x2F;profile文件中</p>
+</li>
+<li><p>并通过语法：source配置文件，进行立刻生效，或者重新登陆xshell</p>
+</li>
+</ul>
+<h3 id="自定义环境变量PATH"><a href="#自定义环境变量PATH" class="headerlink" title="自定义环境变量PATH"></a>自定义环境变量PATH</h3><pre><code>export PATH=$PATH:目录
+</code></pre>
+<h2 id="文件上传和下载"><a href="#文件上传和下载" class="headerlink" title="文件上传和下载"></a>文件上传和下载</h2><pre><code>yum -y install lrzsz
+
+rz命令，进行上传，直接输入rz即可
+
+sz命令进行下载
+语法：sz 要下载的文件
+</code></pre>
+<h2 id="压缩和解压缩"><a href="#压缩和解压缩" class="headerlink" title="压缩和解压缩"></a>压缩和解压缩</h2><h3 id="tar"><a href="#tar" class="headerlink" title="tar"></a>tar</h3><ul>
+<li>.tar称之为tarball，归档文件，即简单的将文件组装到一个.tar的文件内，并没有太多文件体积的减少，仅是简单的封装</li>
+<li>.gz，也常见为.tar  .gz  .gzip格式压缩文件，即使用压缩算法将文件压缩到一个文件内，可以极大地减少压缩后的体积</li>
+</ul>
+<p>针对这两种格式，使用tar命令均可以进行压缩和解压缩的操作</p>
+<pre><code>语法：
+tar [-c -v -x -f -z -C] 参数1 参数2 ... 参数n
+
+-c：创建压缩文件，用于压缩模式
+-v：显示压缩、解压缩的过程，用于查看进度
+-x：解压模式
+-f：要创建的文件，或者要解压的文件，-发、选项必须在左右选项中处于最后一个
+-z：gzip模式，不使用-z就是普通的tarball模式
+-C：选择解压的目的地，用于解压模式
+
+压缩
+tar -cvf test.tar  1.txt 2.txt ...
+tar -zcvf test.tar.gz  1.txt 2.txt ...
+
+
+解压
+tar -vxf test.tar 
+
+tar -vxf test.tar -C /home/ubuntu
+</code></pre>
+<h3 id="zip"><a href="#zip" class="headerlink" title="zip"></a>zip</h3><pre><code>压缩语法：
+zip -r 参数1 参数2 ...
+
+-r：被压缩的文件中有文件夹使用-r没有不需要
+
+
+解压语法：
+unzip -d 参数1...
+-d:指定解压目录
+unzip text.zip -d /home/ubuntu
+</code></pre>
+
+      
+       <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以在下面评论区评论，也可以邮件至 jaytp@qq.com </span>
+    </div>
+</article>
+
+
+<p>
+    <a  class="dashang" onclick="dashangToggle()">赏</a>
+</p>
+
+
+
+
+
+
+    
+
+
+
+
+    </div>
+    <div class="copyright">
+        <p class="footer-entry">
+    ©2016-2020 Yelog
+</p>
+<p class="footer-entry">Built with <a href="https://hexo.io/" target="_blank">Hexo</a> and <a href="https://github.com/yelog/hexo-theme-3-hexo" target="_blank">3-hexo</a> theme</p>
+
+    </div>
+    <div class="full-toc">
+        <button class="full" data-title="切换全屏 快捷键 s"><span class="min "></span></button>
+<a class="" id="rocket" ></a>
+
+    </div>
+</div>
+
+<div class="hide_box" onclick="dashangToggle()"></div>
+<div class="shang_box">
+    <a class="shang_close"  onclick="dashangToggle()">×</a>
+    <div class="shang_tit">
+        <p>喜欢就点赞,疼爱就打赏</p>
+    </div>
+    <div class="shang_payimg">
+        <div class="pay_img">
+            <img src="/img/alipay.jpg" class="alipay" title="扫码支持">
+            <img src="/img/weixin.jpg" class="weixin" title="扫码支持">
+        </div>
+    </div>
+    <div class="shang_payselect">
+        <span><label><input type="radio" name="pay" checked value="alipay">支付宝</label></span><span><label><input type="radio" name="pay" value="weixin">微信</label></span>
+    </div>
+</div>
+
+
+</body>
+<script src="/js/jquery.pjax.js?v=1.1.0" ></script>
+
+<script src="/js/script.js?v=1.1.0" ></script>
+<script>
+    var img_resize = 'default';
+    function initArticle() {
+        /*渲染对应的表格样式*/
+        
+            $("#post .pjax table").addClass("green_title");
+        
+
+        /*渲染打赏样式*/
+        
+        $("input[name=pay]").on("click", function () {
+            if($("input[name=pay]:checked").val()=="weixin"){
+                $(".shang_box .shang_payimg .pay_img").addClass("weixin_img");
+            } else {
+                $(".shang_box .shang_payimg .pay_img").removeClass("weixin_img");
+            }
+        })
+        
+
+        /*高亮代码块行号*/
+        
+
+        /*访问数量*/
+        
+        $.getScript("//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js");
+        
+
+        /*代码高亮，行号对齐*/
+        $('.pre-numbering').css('line-height',$('.has-numbering').css('line-height'));
+
+        
+        
+    }
+
+    /*打赏页面隐藏与展示*/
+    
+    function dashangToggle() {
+        $(".shang_box").fadeToggle();
+        $(".hide_box").fadeToggle();
+    }
+    
+
+</script>
+
+<!--加入行号的高亮代码块样式-->
+
+<!--自定义样式设置-->
+<style>
+    
+    
+    .nav {
+        width: 542px;
+    }
+    .nav.fullscreen {
+        margin-left: -542px;
+    }
+    .nav-left {
+        width: 120px;
+    }
+    
+    
+    @media screen and (max-width: 1468px) {
+        .nav {
+            width: 492px;
+        }
+        .nav.fullscreen {
+            margin-left: -492px;
+        }
+        .nav-left {
+            width: 100px;
+        }
+    }
+    
+    
+    @media screen and (max-width: 1024px) {
+        .nav {
+            width: 492px;
+            margin-left: -492px
+        }
+        .nav.fullscreen {
+            margin-left: 0;
+        }
+    }
+    
+    @media screen and (max-width: 426px) {
+        .nav {
+            width: 100%;
+        }
+        .nav-left {
+            width: 100%;
+        }
+    }
+    
+    
+    .nav-right .title-list nav a .post-title, .nav-right .title-list #local-search-result a .post-title {
+        color: #383636;
+    }
+    
+    
+    .nav-right .title-list nav a .post-date, .nav-right .title-list #local-search-result a .post-date {
+        color: #5e5e5f;
+    }
+    
+    
+    .nav-right nav a.hover, #local-search-result a.hover{
+        background-color: #e2e0e0;
+    }
+    
+    
+
+    /*列表样式*/
+    
+
+    /* 背景图样式 */
+    
+    
+
+
+    /*引用块样式*/
+    
+
+    /*文章列表背景图*/
+    
+
+    
+</style>
+
+
+
+
+
+
+
+</html>

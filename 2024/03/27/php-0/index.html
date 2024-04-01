@@ -241,7 +241,7 @@
     <li>
         <div class="all active" data-rel="全部文章">全部文章
             
-                <small>(5)</small>
+                <small>(6)</small>
             
         </div>
     </li>
@@ -254,6 +254,21 @@
             
             代码
             <small>(3)</small>
+        </div>
+        
+    </li>
+
+            
+        
+    
+        
+            
+                
+    <li>
+        <div data-rel="操作系统">
+            
+            操作系统
+            <small>(1)</small>
         </div>
         
     </li>
@@ -276,8 +291,8 @@
         
     </div>
 </div>
-<input type="hidden" id="yelog_site_posts_number" value="5">
-<input type="hidden" id="yelog_site_word_count" value="55k">
+<input type="hidden" id="yelog_site_posts_number" value="6">
+<input type="hidden" id="yelog_site_word_count" value="59.9k">
 <div style="display: none">
     <span id="busuanzi_value_site_uv"></span>
     <span id="busuanzi_value_site_pv"></span>
@@ -328,6 +343,15 @@
 
     
     <nav id="title-list-nav">
+        
+        
+        <a  class="全部文章 操作系统 "
+           href="/2024/04/01/Linux/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="Linux">Linux</span>
+            <span class="post-date" title="2024-04-01 20:05:45">2024/04/01</span>
+        </a>
         
         
         <a  class="全部文章 "
@@ -412,12 +436,12 @@
     </div>
     <div class="article-meta">
         
-            发布时间 : <time class="date" title='最后更新: 2024-03-28 16:03:36'>2024-03-27 19:33</time>
+            发布时间 : <time class="date" title='最后更新: 2024-03-31 19:40:12'>2024-03-27 19:33</time>
         
     </div>
     <div class="article-meta">
         
-        <span>字数:25.5k</span>
+        <span>字数:25.8k</span>
         
         
         <span id="busuanzi_container_page_pv">
@@ -2287,7 +2311,7 @@ while($left &lt;= $right)&#123;
 
 </code></pre>
 <p>变为函数</p>
-<pre><code>&lt;?php
+<pre><code class="php">&lt;?php
 
 $arr = array(1,2,3,5,8,9);
 
@@ -2574,7 +2598,7 @@ enum(数据值1,数据值2)
 所以，enum字段实际存储的是数值，在进行数据插入的时候，可以使用相应的数值进行。
 </code></pre>
 <p>特性：在mysql中系统是自动进行类型转换的：如果数据碰到运算符，系统会自动将数据转换为数值，普通字符串转换成数值0</p>
-<pre><code>mysql&gt; create table enum(
+<pre><code class="mysql">mysql&gt; create table enum(
     -&gt; gender enum(&#39;男&#39;,&#39;女&#39;,&#39;保密&#39;));
 Query OK, 0 rows affected (0.01 sec)
 
@@ -2642,7 +2666,7 @@ set(&#39;值1&#39;,&#39;值2&#39;,&#39;值3&#39;,&#39;值4&#39;,……);
 2个字节：set只能由16个选项
 最多8个字节：64个选项
 </code></pre>
-<pre><code>mysql&gt; create table my_set(
+<pre><code class="mysql">mysql&gt; create table my_set(
     -&gt; hooby set(&#39;篮球&#39;,&#39;足球&#39;,&#39;羽毛球&#39;,&#39;乒乓球&#39;,&#39;冰球&#39;,&#39;网球&#39;,&#39;橄榄球&#39;,&#39;蹴鞠&#39;)
     -&gt; );
     mysql&gt; insert into my_set values(&#39;足球,网球,蹴鞠&#39;);
@@ -2689,7 +2713,7 @@ mysql&gt; select hooby+0 from my_set;
 <h2 id="Mysql记录长度"><a href="#Mysql记录长度" class="headerlink" title="Mysql记录长度"></a>Mysql记录长度</h2><p>mysql的记录最大长度为35535个字节</p>
 <p>证明varchar在mysql中只能够达到的理论值（utf8和GBK）</p>
 <p>varchar除了存储数据本身外，还需要额外空间来保存记录长度</p>
-<pre><code>mysql&gt; create table my_utf(
+<pre><code class="mysql">mysql&gt; create table my_utf(
     -&gt; name varchar(65535)
     -&gt; )charset utf8;
 ERROR 1074 (42000): Column length too big for column &#39;name&#39; (max = 21845); use BLOB or TEXT instead
@@ -3538,7 +3562,7 @@ on update cascade on delete set null
 <p>用户提供是都同步的命令</p>
 <p>commit：提交（同步到数据库，事务清空）</p>
 <p>rollback：回滚（清空事务）</p>
-<pre><code>查看自动事务是否开启
+<pre><code class="mysql">查看自动事务是否开启
 mysql&gt; show variables like &quot;autocommit%&quot;;
 +---------------+-------+
 | Variable_name | Value |
@@ -3596,7 +3620,7 @@ mysql&gt; select @name;
 <pre><code>1、赋值且查看赋值过程：
     select @变量1 := 字段1, @变量2 := 字段2,...... fron 数据表 where 条件;
 </code></pre>
-<pre><code>mysql&gt; select @username := username, @password := password from users1 where id=6;
+<pre><code class="mysql">mysql&gt; select @username := username, @password := password from users1 where id=6;
 +-----------------------+-----------------------+
 | @username := username | @password := password |
 +-----------------------+-----------------------+
@@ -3623,7 +3647,7 @@ mysql&gt; select @password;
 <pre><code>2、只赋值，不看过程
     select 字段1, 字段2,...... from 数据源 where 条件 into @变量1, @变量2......
 </code></pre>
-<pre><code>mysql&gt; select username,password from users1 where id=2 into @username,@password;
+<pre><code class="mysql">mysql&gt; select username,password from users1 where id=2 into @username,@password;
 Query OK, 1 row affected (0.00 sec)
 
 mysql&gt; select @username;
@@ -3654,7 +3678,7 @@ mysql&gt; select @password;
 <pre><code>基本语法：
     if(条件,为真结果,为假结果)
 </code></pre>
-<pre><code>mysql&gt; select *, if (age &gt; 30,&#39;符合&#39;,&#39;不符合&#39;) as juje from student;
+<pre><code class="mysql">mysql&gt; select *, if (age &gt; 30,&#39;符合&#39;,&#39;不符合&#39;) as juje from student;
 +----------+--------+------+-------+-----------+
 | class_id | name   | age  | hight | juje      |
 +----------+--------+------+-------+-----------+
@@ -3722,7 +3746,7 @@ End while;
 <h3 id="PHP接收数据的三种方式"><a href="#PHP接收数据的三种方式" class="headerlink" title="PHP接收数据的三种方式"></a>PHP接收数据的三种方式</h3><pre><code>1、不管是$_GET/$_POST?$_REQUEST,三个都是PHP超全局变量预定义数组，表单的元素的&quot;name&quot;属性的值作为数组的下标，而value属性对应的值就是数组的元素值
 2、如果get和post中有同名数组元素，post会覆盖get，可以在php.ini中修改
 </code></pre>
-<pre><code>&lt;?php
+<pre><code class="php">&lt;?php
 
 
 echo &quot;&lt;pre&gt;&quot;;
@@ -3753,14 +3777,14 @@ echo &quot;&lt;pre&gt;&quot;;
 
 print_r($_POST);
 </code></pre>
-<pre><code>&lt;?php
+<pre><code class="php">&lt;?php
 
 
 echo &quot;&lt;pre&gt;&quot;;
 
 print_r($_POST);
 
-$hobby = isset($_POST[hobby])?$_POST[hobby]:array();  // 判断提交的数据是否为空
+$hobby = isset($_POST[hobby])?$_POST[hobby]:array();  //isset只在验证未曾定义的变量时才会返回false
 
 $hobby_str = implode(&#39;,&#39;,$hobby); // 将传递的数组转换为字符串，存储到数据库中
 echo $hobby_str;
@@ -3782,7 +3806,7 @@ print_r($arryy);
     text/plain：空格转换为&quot;+&quot;号，但不对特殊字符编码。
 3、上传表单：file表单
 </code></pre>
-<pre><code>&lt;body&gt;
+<pre><code class="html">&lt;body&gt;
    &lt;form method=&quot;post&quot;  enctype=&quot;multipart/form-data&quot; action=&quot;2.php&quot;&gt;
         &lt;input type=&quot;file&quot; name=&quot;image&quot; /&gt;
         &lt;input type=&quot;submit&quot; name=&quot;btn&quot; value=&quot;文件上传&quot;/&gt;
@@ -3793,15 +3817,18 @@ print_r($arryy);
 <pre><code class="php">array(1) &#123;
   [&quot;image&quot;]=&gt;
   array(5) &#123;
-    [&quot;name&quot;]=&gt;
-    string(10) &quot;崔健.jpg&quot;
-    [&quot;type&quot;]=&gt;
+    [&quot;name&quot;]=&gt;   			//上传的文件名，实际用来保存扩展名
+    string(10) &quot;崔健.jpg&quot;   
+    [&quot;type&quot;]=&gt;				//文件上传到服务器后操作系统保存的临时路径
     string(10) &quot;image/jpeg&quot;
-    [&quot;tmp_name&quot;]=&gt;
+    [&quot;tmp_name&quot;]=&gt;			//MIME类型
     string(22) &quot;C:\Windows\php48A2.tmp&quot;
-    [&quot;error&quot;]=&gt;
-    int(0)
-    [&quot;size&quot;]=&gt;
+    [&quot;error&quot;]=&gt;		//文件上传的带代号 0：文件上传成功。1：文件超过了PHP.ini中的upload_max_filesize选项的值。
+    int(0)			//2：上传文件的大小超过了HTML表单中MAZ_FILE_SIZE的值。3：文件只有部分上传。
+                    //4：用户没有选择上传文件。6：找不到临时文件夹。7：文件写入失败
+        
+        
+    [&quot;size&quot;]=&gt;		//文件大小
     int(28573)
   &#125;
 &#125;
@@ -3814,8 +3841,8 @@ header(&#39;Content-type:text/html;charset=utf-8&#39;);
 
 $file = $_FILES[&#39;image&#39;];
 
-if (is_uploaded_file($file[&#39;tmp_name&#39;]))&#123;  // 判断
-    if(move_uploaded_file($file[&#39;tmp_name&#39;],&#39;upload/&#39;.$file[&#39;name&#39;]))&#123;  // 移动
+if (is_uploaded_file($file[&#39;tmp_name&#39;]))&#123;  // 判断的是临时文件
+    if(move_uploaded_file($file[&#39;tmp_name&#39;],&#39;upload/&#39;.$file[&#39;name&#39;]))&#123;  // 移动文件(被移动的文件路径,要去的地方+文件名)
         echo &quot;文件保存成功&quot;;
     &#125;
     else&#123;
@@ -3841,7 +3868,7 @@ else&#123;
    &lt;/form&gt;
 &lt;/body&gt;
 </code></pre>
-<pre><code>Array
+<pre><code class="php">Array
 (
     [image] =&gt; Array
         (
@@ -3894,7 +3921,7 @@ else&#123;
    &lt;/form&gt;
 &lt;/body&gt;
 </code></pre>
-<pre><code>Array
+<pre><code class="php">Array
 (
     [image1] =&gt; Array
         (
@@ -3925,7 +3952,7 @@ else&#123;
 
 )
 </code></pre>
-<p>同名数组遍历</p>
+<p><strong>同名数组遍历</strong></p>
 <pre><code class="php">&lt;?php
 
 header(&#39;Content-type:text/html;charset=utf-8&#39;);
@@ -3950,6 +3977,49 @@ if(isset($_FILES[&#39;image&#39;][&#39;name&#39;]) &amp;&amp; is_array($_FILES[&
 
 ?&gt;
 
+</code></pre>
+<p><strong>一次遍历实现文件上传</strong></p>
+<pre><code class="php">&lt;?php
+
+$arr = $_FILES[&#39;image&#39;];
+if(isset($arr[&#39;name&#39;]) &amp;&amp; is_array($arr[&#39;name&#39;]))&#123;
+    foreach($arr[&#39;name&#39;] as $k =&gt; $v)&#123;
+        if (is_uploaded_file($arr[&#39;tmp_name&#39;][$k]))&#123;  
+            if(move_uploaded_file($arr[&#39;tmp_name&#39;][$k],&#39;upload/&#39;.$arr[&#39;name&#39;][$k]))&#123;  
+                echo &quot;文件保存成功&quot;;
+            &#125;
+            else&#123;
+                echo &quot;文件保存失败！&quot;;
+            &#125;
+        &#125;
+        else&#123;
+            echo &quot;上传失败！&quot;;
+        &#125;
+    &#125;
+&#125;else&#123;
+    echo 2;
+&#125;
+?&gt;
+</code></pre>
+<p><strong>不同命数组</strong></p>
+<pre><code class="php">&lt;?php
+
+$arr = $_FILES;
+
+foreach($arr as $file)&#123;
+    if(is_uploaded_file($file[&#39;tmp_name&#39;]))&#123;
+        if(move_uploaded_file($file[&#39;tmp_name&#39;],&#39;upload/&#39;.$file[&#39;name&#39;]))&#123;
+            echo &quot;文件上传成功&quot;;
+        &#125;else&#123;
+            echo &quot;1&quot;;
+            echo &quot;文件表保存失败&quot;;
+        &#125;
+    &#125;else&#123;
+        echo &quot;2&quot;;
+        echo &quot;文件上传失败&quot;;
+    &#125;
+&#125;
+?&gt;
 </code></pre>
 <h3 id="文件上传后续问题"><a href="#文件上传后续问题" class="headerlink" title="文件上传后续问题"></a>文件上传后续问题</h3><p>实现上传功能代码的重复利用：封装上传函数</p>
 <p>功能：上传文件</p>
