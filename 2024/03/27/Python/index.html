@@ -292,7 +292,7 @@
     </div>
 </div>
 <input type="hidden" id="yelog_site_posts_number" value="7">
-<input type="hidden" id="yelog_site_word_count" value="71.5k">
+<input type="hidden" id="yelog_site_word_count" value="71.7k">
 <div style="display: none">
     <span id="busuanzi_value_site_uv"></span>
     <span id="busuanzi_value_site_pv"></span>
@@ -445,7 +445,7 @@
     </div>
     <div class="article-meta">
         
-            发布时间 : <time class="date" title='最后更新: 2024-03-28 16:03:40'>2024-03-27 19:33</time>
+            发布时间 : <time class="date" title='最后更新: 2024-04-19 19:25:47'>2024-03-27 19:33</time>
         
     </div>
     <div class="article-meta">
@@ -525,7 +525,7 @@ SyntaxError: invalid syntax
 </code></pre>
 </li>
 <li><p>具有严格的缩进限制</p>
-<pre><code> print(&quot;hello python&quot;)
+<pre><code class="py"> print(&quot;hello python&quot;)
     print(&quot;hello python&quot;) #出现缩进错误
     
  /////////////////////////////////////////////////////////////////////////////////
@@ -538,7 +538,7 @@ IndentationError: unexpected indent
 </code></pre>
 </li>
 </ol>
-<h3 id="python2-0默认不支持中文，3-0支持"><a href="#python2-0默认不支持中文，3-0支持" class="headerlink" title="python2.0默认不支持中文，3.0支持"></a>python2.0默认不支持中文，3.0支持</h3><h2 id="注释"><a href="#注释" class="headerlink" title="注释"></a>注释</h2><pre><code># 这是一个单行注释，为了保证代码可读性，建议注释后面+一个空格
+<h3 id="python2-0默认不支持中文，3-0支持"><a href="#python2-0默认不支持中文，3-0支持" class="headerlink" title="python2.0默认不支持中文，3.0支持"></a>python2.0默认不支持中文，3.0支持</h3><h2 id="注释"><a href="#注释" class="headerlink" title="注释"></a>注释</h2><pre><code class="py"># 这是一个单行注释，为了保证代码可读性，建议注释后面+一个空格
 print(&quot;hello word&quot;)
 
 print(&quot;hellow word&quot;)  # 可以把注释和代码写在同一行，代码和注释之间建议间隔两个空格，保证代码可读性
@@ -553,7 +553,7 @@ print(&quot;hellow word&quot;)  # 可以把注释和代码写在同一行，代�
 </code></pre>
 <h2 id="算数运算符"><a href="#算数运算符" class="headerlink" title="算数运算符"></a>算数运算符</h2><p>算术运算符优先级</p>
 <p>跟小学一样，先乘除后加减，**优先级最高，可用括号()调整计算优先级</p>
-<pre><code>+：加
+<pre><code class="py">+：加
 -：减
 *：乘
 /：除
@@ -568,7 +568,7 @@ print(&quot;hellow word&quot;)  # 可以把注释和代码写在同一行，代�
     
 
 </code></pre>
-<h2 id="变量定义"><a href="#变量定义" class="headerlink" title="变量定义"></a>变量定义</h2><pre><code># 变量名 = 值
+<h2 id="变量定义"><a href="#变量定义" class="headerlink" title="变量定义"></a>变量定义</h2><pre><code class="py"># 变量名 = 值
 
 qq_number = &quot;admin&quot;
 
@@ -577,7 +577,7 @@ qq_passwd = &quot;123456&quot;
 print(qq_number)
 print(qq_passwd)
 </code></pre>
-<h3 id="买苹果"><a href="#买苹果" class="headerlink" title="买苹果"></a>买苹果</h3><pre><code># 定义苹果价格
+<h3 id="买苹果"><a href="#买苹果" class="headerlink" title="买苹果"></a>买苹果</h3><pre><code class="py"># 定义苹果价格
 price = 8.5
 
 # 购买数量
@@ -591,7 +591,7 @@ money = money -5
 
 print(money)
 </code></pre>
-<h3 id="个人信息"><a href="#个人信息" class="headerlink" title="个人信息"></a>个人信息</h3><pre><code># 字符串 str
+<h3 id="个人信息"><a href="#个人信息" class="headerlink" title="个人信息"></a>个人信息</h3><pre><code class="py"># 字符串 str
 name = &quot;小明&quot;
 
 # 整形 int
@@ -642,21 +642,21 @@ print(type(sex))
 </li>
 </ul>
 <p>2、字符串变量之间使用 + 拼接字符串</p>
-<pre><code>a = &quot;小&quot;
+<pre><code class="py">a = &quot;小&quot;
 b = &quot;明&quot;
 
 print(a+b)
 </code></pre>
 <h2 id="变量的输入"><a href="#变量的输入" class="headerlink" title="变量的输入"></a>变量的输入</h2><p>input() 函数接受到的数据都是  str</p>
 <p>字符串变量 &#x3D; input(“提示信息”)</p>
-<pre><code>qq_passwd = input(&quot;请输入qq密码：&quot;)
+<pre><code class="py">qq_passwd = input(&quot;请输入qq密码：&quot;)
 
 print(qq_passwd)
 print(type(qq_passwd))
 </code></pre>
 <h2 id="类型转换函数"><a href="#类型转换函数" class="headerlink" title="类型转换函数"></a>类型转换函数</h2><p>int(x) :将x转换为一个整数</p>
 <p>float(x)：将x转换为一个浮点数</p>
-<h3 id="买苹果增强版"><a href="#买苹果增强版" class="headerlink" title="买苹果增强版"></a>买苹果增强版</h3><pre><code># 1、输入苹果单价
+<h3 id="买苹果增强版"><a href="#买苹果增强版" class="headerlink" title="买苹果增强版"></a>买苹果增强版</h3><pre><code class="py"># 1、输入苹果单价
 price_str = input(&quot;请输入苹果单价：&quot;)
 # 2、输入购买重量
 weight_str = input(&quot;请输入购买重量：&quot;)
@@ -691,10 +691,10 @@ print(money)
 %%	输出%
 </code></pre>
 <p>语法</p>
-<pre><code>print(&quot;格式化字符串&quot; % 变量1)
+<pre><code class="py">print(&quot;格式化字符串&quot; % 变量1)
 print(&quot;格式化字符串&quot; % (变量1,变量2...))
 </code></pre>
-<pre><code># 1、输入苹果单价
+<pre><code class="py"># 1、输入苹果单价
 price_str = float(input(&quot;请输入苹果单价：&quot;))
 # 2、输入购买重量
 weight_str = float(input(&quot;请输入购买重量：&quot;))
@@ -703,7 +703,7 @@ money = price_str * weight_str
 
 print(&quot;苹果的单价是%.3f元/斤，您购买了%.02f斤苹果，需要支付%.02f元&quot; % (price_str, weight_str, money))
 </code></pre>
-<pre><code># 显示百分数
+<pre><code class="py"># 显示百分数
 scale = 0.25
 
 print(&quot;所占比例是%.2f%%&quot; % (scale * 100))
@@ -715,7 +715,7 @@ print(&quot;所占比例是%.2f%%&quot; % (scale * 100))
 <li><strong>不能与关键字重名</strong></li>
 </ul>
 <h3 id="关键字"><a href="#关键字" class="headerlink" title="关键字"></a>关键字</h3><p>关键字就是在python内部已使用的标识符</p>
-<pre><code>import keyword
+<pre><code class="py">import keyword
 
 print(keyword.kwlist)  # 打印出所有关键字
 </code></pre>
@@ -732,7 +732,7 @@ print(keyword.kwlist)  # 打印出所有关键字
     执行代码
     
 </code></pre>
-<pre><code># 1、定义整数变量记录一个年龄
+<pre><code class="py"># 1、定义整数变量记录一个年龄
 age = int(input(&quot;请输入您的年龄：&quot;))
 # 2、判断是否成年
 if age &gt;= 18:
@@ -746,7 +746,7 @@ else:
 
 
 </code></pre>
-<pre><code># 1、各种节日该怎么办
+<pre><code class="py"># 1、各种节日该怎么办
 holiday_name = &quot;生日&quot;
 
 if holiday_name == &quot;情人节&quot;:
@@ -762,7 +762,7 @@ else:
 
 </code></pre>
 <p>火车站安检</p>
-<pre><code># 定义has_ticket表示是否有车票
+<pre><code class="py"># 定义has_ticket表示是否有车票
 has_ticket = True
 # 定义整形变量knife_length表示刀的长度
 knife_length = 2
@@ -780,7 +780,7 @@ else:
 </code></pre>
 <p>elif的应用场景：同时多个条件判断，所有条件是平级的</p>
 <p>if嵌套：在之前条件满足的条件下，再增加额外的判断</p>
-<h3 id="石头剪刀部"><a href="#石头剪刀部" class="headerlink" title="石头剪刀部"></a>石头剪刀部</h3><pre><code>import random  # 导入随机数模块
+<h3 id="石头剪刀部"><a href="#石头剪刀部" class="headerlink" title="石头剪刀部"></a>石头剪刀部</h3><pre><code class="py">import random  # 导入随机数模块
 # 玩家
 user = int(input(&quot;石头（1），剪刀（2），布（3），请输入要出的内容：&quot;))
 # 电脑
@@ -807,18 +807,18 @@ else:
 <h2 id="随机数的处理"><a href="#随机数的处理" class="headerlink" title="随机数的处理"></a>随机数的处理</h2><p>在python中要使用随机数，首先需要导入随机数的模块</p>
 <p><strong>import random</strong></p>
 <p>导入模块后，可以在模块名称后面敲一个.然后按tab键。会提示该模块中包含的所有函数</p>
-<pre><code>random.randint(12,20) # 生成的随机数n 12 &lt;= n &lt;= 20
+<pre><code class="py">random.randint(12,20) # 生成的随机数n 12 &lt;= n &lt;= 20
 random.randint(20,20) # 生成的随机数永远是20
 random.randint(20,12) # 该语句是错误的，下限必须小于上线
 </code></pre>
-<h2 id="循环"><a href="#循环" class="headerlink" title="循环"></a>循环</h2><h3 id="while循环"><a href="#while循环" class="headerlink" title="while循环"></a>while循环</h3><pre><code># 打印多次print
+<h2 id="循环"><a href="#循环" class="headerlink" title="循环"></a>循环</h2><h3 id="while循环"><a href="#while循环" class="headerlink" title="while循环"></a>while循环</h3><pre><code class="py"># 打印多次print
 i = 0
 while i &lt; 50:
     print(&quot;hello world&quot;)
     print(i)
     i += 1
 </code></pre>
-<h3 id="赋值运算符"><a href="#赋值运算符" class="headerlink" title="赋值运算符"></a>赋值运算符</h3><pre><code>=
+<h3 id="赋值运算符"><a href="#赋值运算符" class="headerlink" title="赋值运算符"></a>赋值运算符</h3><pre><code class="py">=
 +=    (i += a  --&gt;  i = i+a)
 -=
 *=
@@ -827,7 +827,7 @@ while i &lt; 50:
 %=
 **=
 </code></pre>
-<h3 id="0-100数字相加"><a href="#0-100数字相加" class="headerlink" title="0~100数字相加"></a>0~100数字相加</h3><pre><code># 1、定义结果变量
+<h3 id="0-100数字相加"><a href="#0-100数字相加" class="headerlink" title="0~100数字相加"></a>0~100数字相加</h3><pre><code class="py"># 1、定义结果变量
 result = 0
 a = 0 
 while a &lt;= 100:
@@ -836,7 +836,7 @@ while a &lt;= 100:
 print(result)  # 4、返回最中结果
 </code></pre>
 <p><strong>偶数相加</strong></p>
-<pre><code>i = 0
+<pre><code class="py">i = 0
 result = 0  # 1、定义结果变量
 while i &lt;= 100:
     if i % 2 == 0:  # 此处的 ==  换为 !=  就是奇数相加
@@ -851,7 +851,7 @@ print(result)  # 5、输出结果
 <p>continue：某一条件满足时，推出本次循环，不执行后续重复的代码</p>
 <p>break和continue只针对当前所在的循环</p>
 <p><strong>break</strong></p>
-<pre><code>i = 0
+<pre><code class="py">i = 0
 while i &lt; 10:
     # break 某一条件满足时，退出循环，不再执行后面的代码
     if i == 3:  # 当 i == 3 时，结束循环
@@ -860,7 +860,7 @@ while i &lt; 10:
     i += 1
 </code></pre>
 <p><strong>continue</strong></p>
-<pre><code>i = 0
+<pre><code class="py">i = 0
 while i &lt; 10:
     # continue 某一条件满足时，退出本次循环，不再执行后面的代码
     if i == 3:  # 当 i == 3 时，不打印
@@ -871,13 +871,13 @@ while i &lt; 10:
 
 </code></pre>
 <h3 id="打印小星星"><a href="#打印小星星" class="headerlink" title="打印小星星"></a>打印小星星</h3><p>循环写法</p>
-<pre><code>i = 0
+<pre><code class="py">i = 0
 while i &lt; 10:
     print(&quot;*&quot; * i)
     i += 1
 </code></pre>
 <p>循环嵌套写法</p>
-<pre><code>&quot;&quot;&quot;
+<pre><code class="py">&quot;&quot;&quot;
 *
 **
 ***
@@ -896,7 +896,7 @@ while h &lt;= q:
     print()
     h += 1
 </code></pre>
-<h3 id="打印九九乘法表"><a href="#打印九九乘法表" class="headerlink" title="打印九九乘法表"></a>打印九九乘法表</h3><pre><code>&quot;&quot;&quot;
+<h3 id="打印九九乘法表"><a href="#打印九九乘法表" class="headerlink" title="打印九九乘法表"></a>打印九九乘法表</h3><pre><code class="python">&quot;&quot;&quot;
 1*1=1
 2*1=2 2*2=4
 ......
@@ -914,22 +914,22 @@ while a &lt;= 9:
     a += 1
 
 </code></pre>
-<h2 id="转义字符"><a href="#转义字符" class="headerlink" title="转义字符"></a>转义字符</h2><pre><code>\\   反斜杠
+<h2 id="转义字符"><a href="#转义字符" class="headerlink" title="转义字符"></a>转义字符</h2><pre><code class="py">\\   反斜杠
 
 print(&quot;你是我的\\神&quot;)
 你是我的\神
 </code></pre>
-<pre><code>\&#39;   单引号
+<pre><code class="py">\&#39;   单引号
 
 print(&quot;你是我的\&#39;神\&#39;&quot;)
 你是我的&#39;神&#39;
 </code></pre>
-<pre><code>\&quot;	双引号
+<pre><code class="py">\&quot;	双引号
 
 print(&quot;你是我的\&quot;神\&quot;&quot;)
 你是我的&quot;神&quot;
 </code></pre>
-<pre><code>\n	换行
+<pre><code class="py">\n	换行
 
 print(&quot;你是\n我的神&quot;)
 你是
@@ -945,10 +945,10 @@ print(&quot;你是\n我的神&quot;)
 <li><p>默认情况下print()函数输出内容后，会自动在末尾增加换行</p>
 </li>
 <li><p>如果不希望末尾增加换行，可以在print()函数输出内容后面增加，end&#x3D;””</p>
-<pre><code>print(&quot;*&quot;,end=&quot;&quot;)  # 这样写不会换行
+<pre><code class="py">print(&quot;*&quot;,end=&quot;&quot;)  # 这样写不会换行
 print(&quot;*&quot;)
 </code></pre>
-<pre><code>print(&quot;*&quot;,end=&quot;---&quot;)  # &quot;&quot; 里面指定print输出的连接符
+<pre><code class="py">print(&quot;*&quot;,end=&quot;---&quot;)  # &quot;&quot; 里面指定print输出的连接符
 print(&quot;*&quot;)
 </code></pre>
 <h2 id=""><a href="#" class="headerlink" title=""></a></h2></li>
@@ -964,7 +964,7 @@ print(&quot;*&quot;)
 3、函数名应能表达函数的作用，方便调用
 </code></pre>
 <h3 id="调用"><a href="#调用" class="headerlink" title="调用"></a>调用</h3><p>python 必须先定义函数，在进行调用</p>
-<pre><code># 定义一个函数
+<pre><code class="py"># 定义一个函数
 def hello_w():
     print(&quot;你好&quot;)
     print(&quot;你好&quot;)
@@ -977,7 +977,7 @@ hello_w()  # 调用函数，不调用函数，函数不会执行
 <p>实参：调用函数时，小括号中的参数，是用来把数据传递到函数内部用的。</p>
 <h3 id="return返回值"><a href="#return返回值" class="headerlink" title="return返回值"></a>return返回值</h3><p>print()：只是打印数据，但是如果要使用变量接受，会得到一个none（空值）</p>
 <p>return：返回函数执行结果，需要一个变量接受</p>
-<pre><code>def num_num(num1, num2):
+<pre><code class="py">def num_num(num1, num2):
     result = num1 + num2
     return result
 
@@ -987,7 +987,7 @@ b = 20
 c = a + b  # 写这一步的原因就是为了区分 print 和 return 的区别
 print(c)
 </code></pre>
-<h3 id="函数的嵌套调用"><a href="#函数的嵌套调用" class="headerlink" title="函数的嵌套调用"></a>函数的嵌套调用</h3><pre><code>def test():
+<h3 id="函数的嵌套调用"><a href="#函数的嵌套调用" class="headerlink" title="函数的嵌套调用"></a>函数的嵌套调用</h3><pre><code class="python">def test():
     print(&quot;*&quot; * 50)
 
 
@@ -1000,25 +1000,25 @@ def test1():
 test1()
 </code></pre>
 <h3 id="打印分割线"><a href="#打印分割线" class="headerlink" title="打印分割线"></a>打印分割线</h3><p>1、打印一条分割线</p>
-<pre><code>def prin_line():
+<pre><code class="py">def prin_line():
     print(&quot;-&quot; * 50)
 </code></pre>
 <p>2、打印任意符号的分割线</p>
-<pre><code>def prin_line(char):
+<pre><code class="py">def prin_line(char):
     print(char * 50)
 
 
 prin_line(&quot;+&quot;)
 </code></pre>
 <p>3、打印任意数量分隔符</p>
-<pre><code>def prin_line(char,times):
+<pre><code class="py">def prin_line(char,times):
     print(char * times)
 
 
 prin_line(&quot;+&quot;,20)
 </code></pre>
 <p>4、打印任意行数分隔符     —&gt;函数嵌套调用</p>
-<pre><code>def prin_line(char, times):
+<pre><code class="py">def prin_line(char, times):
     print(char * times)
 
 
@@ -1038,7 +1038,7 @@ prin_lines(5, &quot;$&quot;, 5)
 <li>在模块中定义的全局变量、函数都是模块能够提供给外界直接使用的工具</li>
 </ol>
 <p>模块</p>
-<pre><code>def prin_line(char, times):
+<pre><code class="py">def prin_line(char, times):
     &quot;&quot;&quot;打印单行分隔符&quot;&quot;&quot;
     print(char * times)
 
@@ -1058,7 +1058,7 @@ def prin_lines(num, char, times):
 name = &quot;你是我的神&quot;
 </code></pre>
 <p>体验模块</p>
-<pre><code>import xx_09_分割线模块
+<pre><code class="py">import xx_09_分割线模块
 
 
 a = xx_09_分割线模块.name
@@ -1088,7 +1088,7 @@ lambda 传入参数: 函数体(一行代码)
     
 text_func(lambda x,y: x+y)
 </code></pre>
-<h2 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h2><h3 id="列表基本使用"><a href="#列表基本使用" class="headerlink" title="列表基本使用"></a>列表基本使用</h3><pre><code>name_list = [&quot;zhangsan&quot;, &quot;lisi&quot;, &quot;wangwu&quot;]
+<h2 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h2><h3 id="列表基本使用"><a href="#列表基本使用" class="headerlink" title="列表基本使用"></a>列表基本使用</h3><pre><code class="python">name_list = [&quot;zhangsan&quot;, &quot;lisi&quot;, &quot;wangwu&quot;]
 temp_list = [&quot;悟空&quot;, &quot;八戒&quot;, &quot;沙僧&quot;]
 # 1、取值和取索引
 print(name_list[1])
@@ -1124,7 +1124,7 @@ print(name_list)
 name_list.clear()
 print(name_list)
 </code></pre>
-<h3 id="del关键字"><a href="#del关键字" class="headerlink" title="del关键字"></a>del关键字</h3><pre><code>name_list = [&quot;zhangsan&quot;, &quot;lisi&quot;, &quot;wangwu&quot;]
+<h3 id="del关键字"><a href="#del关键字" class="headerlink" title="del关键字"></a>del关键字</h3><pre><code class="py">name_list = [&quot;zhangsan&quot;, &quot;lisi&quot;, &quot;wangwu&quot;]
 
 # 使用del 关键字删除列表元素
 
@@ -1137,7 +1137,7 @@ del name
 del name_list[1]
 print(name_list)
 </code></pre>
-<h3 id="列表的数据统计"><a href="#列表的数据统计" class="headerlink" title="列表的数据统计"></a>列表的数据统计</h3><pre><code>name_list = [&quot;张一&quot;, &quot;李二&quot;, &quot;王三&quot;, &quot;张一&quot;]
+<h3 id="列表的数据统计"><a href="#列表的数据统计" class="headerlink" title="列表的数据统计"></a>列表的数据统计</h3><pre><code class="py">name_list = [&quot;张一&quot;, &quot;李二&quot;, &quot;王三&quot;, &quot;张一&quot;]
 
 # len （length 长度） 函数统计列表元素的总数
 len_list = len(name_list)
@@ -1148,7 +1148,7 @@ count_list = name_list.count(&quot;张一&quot;)
 print(count_list)
 
 </code></pre>
-<h3 id="列表排序"><a href="#列表排序" class="headerlink" title="列表排序"></a>列表排序</h3><pre><code>name_list = [4,2,6,3,7]
+<h3 id="列表排序"><a href="#列表排序" class="headerlink" title="列表排序"></a>列表排序</h3><pre><code class="py">name_list = [4,2,6,3,7]
 # 升序
 name_list.sort()  # 默认就是升序
 print(name_list)
@@ -1162,13 +1162,13 @@ name_list.reverse()
 print(name_list)
 </code></pre>
 <h3 id="循环遍历"><a href="#循环遍历" class="headerlink" title="循环遍历"></a>循环遍历</h3><p>for循环遍历</p>
-<pre><code>name_list = [&quot;张三&quot;, &quot;李四&quot;, &quot;王五&quot;]
+<pre><code class="py">name_list = [&quot;张三&quot;, &quot;李四&quot;, &quot;王五&quot;]
 
 for num_list in name_list:
     print(&quot;我的名字叫%s&quot; % num_list)
 
 </code></pre>
-<h3 id="列表的sort方法"><a href="#列表的sort方法" class="headerlink" title="列表的sort方法"></a>列表的sort方法</h3><pre><code>列表.sort(key=选择依据的函数, reverse=True|False)
+<h3 id="列表的sort方法"><a href="#列表的sort方法" class="headerlink" title="列表的sort方法"></a>列表的sort方法</h3><pre><code class="py">列表.sort(key=选择依据的函数, reverse=True|False)
 
 1、参数key，是要求传入一个函数，表示将列表的每一个元素都传入函数中，返回排序的依据
 2、参数reverse，是否反转排序结果，True表示降序，False表示升序
@@ -1192,14 +1192,14 @@ print(my_list)
 <li>元组与列表相似，不同之处在于元组的元素不能修改</li>
 <li>元组用()</li>
 </ol>
-<pre><code>single_tuple = (5)
+<pre><code class="py">single_tuple = (5)
 print(type(single_tuple))  # 这样定义的不是元组，而是一个整型
 
 # 单个元素元组的定义 
 single1_tuple = (5,)
 print(type(single1_tuple))  # 这样定义才是元组
 </code></pre>
-<h3 id="元组的基本使用"><a href="#元组的基本使用" class="headerlink" title="元组的基本使用"></a>元组的基本使用</h3><pre><code>info = (&quot;张三&quot;, 18, 1.75)
+<h3 id="元组的基本使用"><a href="#元组的基本使用" class="headerlink" title="元组的基本使用"></a>元组的基本使用</h3><pre><code class="py">info = (&quot;张三&quot;, 18, 1.75)
 
 # 1、取值和取索引
 print(info[0])
@@ -1211,17 +1211,15 @@ print(info.count(&quot;张三&quot;))
 print(len(info))
 </code></pre>
 <h3 id="for循环遍历"><a href="#for循环遍历" class="headerlink" title="for循环遍历"></a>for循环遍历</h3><p>在python中，可以使用for遍历所有非数字型的变量：列表、元组、字典、字符串</p>
-<pre><code>方法与列表一样
-
-
-因为元组中通常存储多种数据类型，所以针对元组的循环遍历不多，不好格式化输出
-
-</code></pre>
-<h3 id="元组的应用场景"><a href="#元组的应用场景" class="headerlink" title="元组的应用场景"></a>元组的应用场景</h3><pre><code>1、有关函数的参数和返回值，一个函数可以接受任意多个参数，或者一次返回多个数据
-2、格式化字符串，格式化字符串后面的()本质上就是一个元组
-3、让列表不可以被修改，以保护数据安全
-</code></pre>
-<h3 id="格式化字符串"><a href="#格式化字符串" class="headerlink" title="格式化字符串"></a>格式化字符串</h3><pre><code>print(&quot;%s 的年龄是%d,身高为%.2f&quot; % (&quot;小明&quot;, 21, 1.80))
+<blockquote>
+<p>方法与列表一样</p>
+<p>因为元组中通常存储多种数据类型，所以针对元组的循环遍历不多，不好格式化输出</p>
+</blockquote>
+<p>​	</p>
+<h3 id="元组的应用场景"><a href="#元组的应用场景" class="headerlink" title="元组的应用场景"></a>元组的应用场景</h3><blockquote>
+<p>1、有关函数的参数和返回值，如果返回值为多个，以元组的形式返回<br>2、格式化字符串，格式化字符串后面的()本质上就是一个元组<br>3、让列表不可以被修改，以保护数据安全</p>
+</blockquote>
+<h3 id="格式化字符串"><a href="#格式化字符串" class="headerlink" title="格式化字符串"></a>格式化字符串</h3><pre><code class="py">print(&quot;%s 的年龄是%d,身高为%.2f&quot; % (&quot;小明&quot;, 21, 1.80))
 
 # 或者
 info = (&quot;小明&quot;, 21, 1.80)
@@ -1232,18 +1230,18 @@ print(&quot;%s 的年龄是%d,身高为%.2f&quot; % info)
 information = &quot;%s 的年龄是%d,身高为%.2f&quot; % (&quot;小明&quot;, 21, 1.80)
 print(information)
 </code></pre>
-<h3 id="元组和列表相互转换"><a href="#元组和列表相互转换" class="headerlink" title="元组和列表相互转换"></a>元组和列表相互转换</h3><pre><code>list(元组)：函数，使元组转换为列表
-tuple(元组)：函数，使列表转换为元组
-</code></pre>
+<h3 id="元组和列表相互转换"><a href="#元组和列表相互转换" class="headerlink" title="元组和列表相互转换"></a>元组和列表相互转换</h3><blockquote>
+<p>list(元组)：函数，使元组转换为列表<br>tuple(元组)：函数，使列表转换为元组</p>
+</blockquote>
 <h2 id="字典"><a href="#字典" class="headerlink" title="字典"></a>字典</h2><p>键key必须是唯一的，只能使用字符串、数字、元组表示</p>
 <p>值values可以是任何数据类型</p>
-<pre><code>xiaoming = &#123;&quot;name&quot;: &quot;小明&quot;,
+<pre><code class="py">xiaoming = &#123;&quot;name&quot;: &quot;小明&quot;,
             &quot;age&quot;: 18,
             &quot;weight&quot;: 75,
             &quot;height&quot;: 1.75&#125;
 print(xiaoming)
 </code></pre>
-<h3 id="字典基本操作"><a href="#字典基本操作" class="headerlink" title="字典基本操作"></a>字典基本操作</h3><pre><code>xiaoming = &#123;&quot;name&quot;: &quot;小明&quot;&#125;
+<h3 id="字典基本操作"><a href="#字典基本操作" class="headerlink" title="字典基本操作"></a>字典基本操作</h3><pre><code class="py">xiaoming = &#123;&quot;name&quot;: &quot;小明&quot;&#125;
 
 # 1、取值
 print(xiaoming[&quot;name&quot;])
@@ -1258,7 +1256,7 @@ print(xiaoming)
 xiaoming.pop(&quot;name&quot;)
 print(xiaoming)
 </code></pre>
-<h3 id="字典的其他操作"><a href="#字典的其他操作" class="headerlink" title="字典的其他操作"></a>字典的其他操作</h3><pre><code>xiaoming_list = &#123;&quot;name&quot;: &quot;小明&quot;&#125;
+<h3 id="字典的其他操作"><a href="#字典的其他操作" class="headerlink" title="字典的其他操作"></a>字典的其他操作</h3><pre><code class="py">xiaoming_list = &#123;&quot;name&quot;: &quot;小明&quot;&#125;
 temp = &#123;&quot;age&quot;: 20&#125;
 # 1、查看字典键值对数量
 print(len(xiaoming_list))
@@ -1271,14 +1269,18 @@ print(xiaoming_list)
 xiaoming_list.clear()
 print(xiaoming_list)
 </code></pre>
-<h3 id="循环遍历-1"><a href="#循环遍历-1" class="headerlink" title="循环遍历"></a>循环遍历</h3><pre><code>xiaoming_dict = &#123;&quot;qq&quot;: &quot;1811790&quot;,
+<h3 id="循环遍历-1"><a href="#循环遍历-1" class="headerlink" title="循环遍历"></a>循环遍历</h3><pre><code class="py">xiaoming_dict = &#123;&quot;qq&quot;: &quot;1811790&quot;,
                  &quot;phone&quot;: &quot;10086&quot;,
                  &quot;name&quot;: &quot;小明&quot;&#125;
 
 for k in xiaoming_dict:
     print(&quot;%s--%s&quot; % (k, xiaoming_dict[k]))
+    
+#或者
+for key,value in xiaoming_dict.items():
+    print(key,value) 
 </code></pre>
-<h3 id="字典应用场景"><a href="#字典应用场景" class="headerlink" title="字典应用场景"></a>字典应用场景</h3><pre><code># 通常都是字典与列表联用
+<h3 id="字典应用场景"><a href="#字典应用场景" class="headerlink" title="字典应用场景"></a>字典应用场景</h3><pre><code class="py"># 通常都是字典与列表联用
 
 # 将多个字典放到列表中
 
@@ -1299,7 +1301,7 @@ info[1][&quot;name&quot;] = &quot;王五&quot;  # 修改
 print(info)
 </code></pre>
 <h2 id="字符串"><a href="#字符串" class="headerlink" title="字符串"></a>字符串</h2><p>可以使用双引号或者单引号定义字符串</p>
-<pre><code>str1 = &quot;123456&quot;
+<pre><code class="py">str1 = &quot;123456&quot;
 str2 = &#39;我是个“学生”&#39;
 
 print(str2)
@@ -1308,7 +1310,7 @@ print(str2[2])  # 索引取值
 for char in str2:
     print(char)
 </code></pre>
-<h3 id="基本操作"><a href="#基本操作" class="headerlink" title="基本操作"></a>基本操作</h3><pre><code>str2 = &quot;hello hello&quot;
+<h3 id="基本操作"><a href="#基本操作" class="headerlink" title="基本操作"></a>基本操作</h3><pre><code class="py">str2 = &quot;hello hello&quot;
 
 # 统计字符串长度
 print(len(str2))
@@ -1317,17 +1319,37 @@ print(str2.count(&quot;llo&quot;))  # 子字符串不存在显示0
 # 统计一个子字符串首次出现的位置  # 子字符串不存在会报错
 print(str2.index(&quot;llo&quot;))
 </code></pre>
-<h3 id="判断类型"><a href="#判断类型" class="headerlink" title="判断类型"></a>判断类型</h3><pre><code>string.isspace()	如果string中只包含空格，则返回True
-string.isalnum()	如果string至少有一个字符并且所有字符都是字母或数字则返回True
-string.isalpha()	如果string至少有一个字符并且所有字符都是字母则返回True
-string.isdecimal()	如果string只包含数字则返回True，全角数字
-string.isdigit()	如果string只包含数字则返回True，全角数字、(1)、\u00b2
-string.isnumeric()	如果string只包含数字则返回True,全角数字、汉字数字
-string.istitle()	如果string是标题化的（每个单词的首字母大写）则返回True
-string.islower()	如果string中至少包含一个区分大小写的字符，并且所有这些（区分大小写的字符都是小写），则返回True
-srting.isupper()	如果string中至少包含至少一个区分大小写的字符，并且所有这些（区分大小写的）字符都是大写，则返回True
-</code></pre>
-<pre><code># 判断是否全是空白字符
+<h3 id="判断类型"><a href="#判断类型" class="headerlink" title="判断类型"></a>判断类型</h3><blockquote>
+<p>string.isspace()	如果string中只包含空格，则返回True</p>
+</blockquote>
+<blockquote>
+<p>string.isalnum()	如果string至少有一个字符并且所有字符都是字母或数字则返回True</p>
+</blockquote>
+<blockquote>
+<p>string.isalpha()	如果string至少有一个字符并且所有字符都是字母则返回True</p>
+</blockquote>
+<blockquote>
+<p>string.isdecimal()	如果string只包含数字则返回True，全角数字</p>
+</blockquote>
+<blockquote>
+<p>string.isdigit()	如果string只包含数字则返回True，全角数字、(1)、\u00b2</p>
+</blockquote>
+<blockquote>
+<p>string.isnumeric()	如果string只包含数字则返回True,全角数字、汉字数字</p>
+</blockquote>
+<blockquote>
+<p>string.istitle()	如果string是标题化的（每个单词的首字母大写）则返回True</p>
+</blockquote>
+<blockquote>
+<p>string.islower()	如果string中至少包含一个区分大小写的字符，并且所有字母为小写，则返回True</p>
+</blockquote>
+<blockquote>
+<p>srting.isupper()	如果string中至少包含至少一个区分大小写的字符，并且所有字符都是大写，则返回True</p>
+</blockquote>
+<blockquote>
+<p>string.strip() 截掉字符串两边的空白字符,返回一个新字符串</p>
+</blockquote>
+<pre><code class="py"># 判断是否全是空白字符
 str = &quot;    \n\r\t&quot;
 
 print(str.isspace())  # \n  \r  \t 等转义字符也会被认为空白字符
@@ -1339,27 +1361,19 @@ print(str_num.isdecimal())
 print(str_num.isdigit())
 print(str_num.isnumeric())
 </code></pre>
-<h3 id="查找替换"><a href="#查找替换" class="headerlink" title="查找替换"></a>查找替换</h3><pre><code> string.startswith(str)		检查字符串是否以str开头，是则返回True
- string.endswith(str)		检查字符串是否已str结尾，是则返回True
+<h3 id="查找替换"><a href="#查找替换" class="headerlink" title="查找替换"></a>查找替换</h3><pre><code class="py"> string.startswith(str)		#检查字符串是否以str开头，是则返回True
+ string.endswith(str)		#检查字符串是否已str结尾，是则返回True
  
- string.find(str,start=0,
- end=len(string))			检测str是否包含在string中，如果start和end指定范围，则检查是否包含在指定范围内，若果是则返回开始的索引值，否则返回-1
+ string.find(str,0,len(string))			#检测str是否包含在string中，如果start和end指定范围，则检查是否包含在指定范围内，若果是则返回开始的索引值，否则返回-1
  
- string.rfind(str,start=0,
- end=len(string))			类似于find()函数，不过是从右边开始查找
- string.index(str,start=0
+ string.rfind(str,0,len(string))			#类似于find()函数，不过是从右边开始查找
+ string.index(str,0,len(string))			#跟index()方法类似，如果str不在string内会报错
 
- string.index(str,start=0
- edn=len(string))			跟index()方法类似，如果str不在string内会报错
+ string.rindex(str,0,len(string))			#跟index()方法类似，从右边开始
  
- string.rindex(str,start=0
- edn=len(string))			跟index()方法类似，从右边开始
- 
- string.replace(old_str,
- new_str,
- num=string.count(old))		把string中的old_str替换成new_str，如果num指定，则替换次数不超过num次
+ string.replace(old_str,new_str,num=string.count(old))		#把string中的old_str替换成new_str，如果num指定，则替换次数不超过num次,返回了一个新的字符串
 </code></pre>
-<pre><code>str = &quot;hello world&quot;
+<pre><code class="py">str = &quot;hello world&quot;
 
 # 检查字符串的开头
 print(str.startswith(&quot;hello&quot;))
@@ -1373,7 +1387,7 @@ print(str.find(&quot; &quot;))  # 与  index 不同的是，字符串找不到�
 new_str = str.replace(&quot; &quot;, &quot;--&quot;)  # 不会改变原有的字符串，而是返回新的一个字符串
 print(new_str)
 </code></pre>
-<h3 id="文本对其"><a href="#文本对其" class="headerlink" title="文本对其"></a>文本对其</h3><pre><code>list = [&quot;登黄鹤楼&quot;,
+<h3 id="文本对其"><a href="#文本对其" class="headerlink" title="文本对其"></a>文本对其</h3><pre><code class="py">list = [&quot;登黄鹤楼&quot;,
         &quot;王之涣&quot;,
         &quot;白日依山尽&quot;,
         &quot;黄河入海流&quot;,
@@ -1381,11 +1395,11 @@ print(new_str)
         &quot;更长一层楼&quot;]
 
 for a_list in list:
-    print(&quot;|%s|&quot; % a_list.center(10, &quot;\u3000&quot;))  # \u3000 是Unicode编码下中文输入全角的空格
+    print(&quot;|%s|&quot; % a_list.center(30, &quot;\u3000&quot;))  # \u3000 是Unicode编码下中文输入全角的空格
 
 # .ljust左对齐，.rjust右对齐
 </code></pre>
-<h3 id="去除空格"><a href="#去除空格" class="headerlink" title="去除空格"></a>去除空格</h3><pre><code>list = [&quot;登黄鹤楼&quot;,
+<h3 id="去除空格"><a href="#去除空格" class="headerlink" title="去除空格"></a>去除空格</h3><pre><code class="py">list = [&quot;登黄鹤楼&quot;,
         &quot;王之涣\t\n&quot;,
         &quot;白日依山尽&quot;,
         &quot;\n\t黄河入海流&quot;,
@@ -1393,20 +1407,20 @@ for a_list in list:
         &quot;更长一层楼&quot;]
 
 for a_list in list:
-    print(&quot;|%s|&quot; % a_list.strip().center(10, &quot;\u3000&quot;))  # 这里的a_list.strip()返回了一个新的字符串
+    print(&quot;|%s|&quot; % a_list.strip().center(30, &quot;\u3000&quot;))  # 这里的a_list.strip()返回了一个新的字符串
 
 # string.strip() 截掉字符串两边的空白字符
 </code></pre>
-<h3 id="拆分和连接"><a href="#拆分和连接" class="headerlink" title="拆分和连接"></a>拆分和连接</h3><pre><code>string.partition(str)	把字符串string分成一个3元素的元组（str前面，str，str后面）
-string.rpartition(str)	类似于partition()方法，不过是从右边开始查找
+<h3 id="拆分和连接"><a href="#拆分和连接" class="headerlink" title="拆分和连接"></a>拆分和连接</h3><pre><code class="py">string.partition(str)	#返回一个数组，把字符串string分成一个3元素的元组（str前面，str，str后面）
+string.rpartition(str)	#类似于partition()方法，不过是从右边开始查找
 
 string.split(str=&quot;&quot;,
-num)					以str为分隔符拆分string,如果num有指定值，则进分隔num+1个子字符串，str默认包含\r,\n,\r\n和空格
+num)					#返回一个数组，以str为分隔符拆分string,如果num有指定值，则进分隔num+1个子字符串，str默认包含\r,\n,\r\n和空格
 
-string.splitlines()		按照（\r,\n,\r\n）分隔，返回一个包含各行为作为元素的列表
-string.jion(seq)		以string作为分隔符，将seq中所有的元素（的字符串表示）合并为一个新的字符串
+string.splitlines()		#按照（\r,\n,\r\n）分隔，返回一个包含各行为作为元素的列表
+string.jion(seq)		#以string作为分隔符，将seq中所有的元素（的字符串表示）合并为一个新的字符串
 </code></pre>
-<pre><code>str = &quot;登黄鹤楼\t王之涣\t白日依山尽\n黄河入海流\t欲穷千里目\t更上一层楼&quot;
+<pre><code class="py">str = &quot;登黄鹤楼\t王之涣\t白日依山尽\n黄河入海流\t欲穷千里目\t更上一层楼&quot;
 
 print(str)
 # 1、拆分字符串,拆分成了列表
